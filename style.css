@@ -1,4 +1,9 @@
-
+* {
+  box-sizing: border-box;
+  font-family: "Work Sans", Helvetica;
+  font-style: normal;
+  font-weight: 400;
+}
 html,
 body {
   margin: 0;
@@ -7,711 +12,58 @@ body {
 }
 
 body {
-  background: #f6dfe9;
-  display: flex;
   justify-content: center;
   overflow-x: hidden;
 }
 
-
 img {
   max-width: 100%;
+  height: auto;
   display: block;
 }
 
 .element-product-designer {
-  width: min(100%, 1920px);
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  background-color: #ffffff;
   overflow-x: hidden;
+   position: relative;
+  background-color: #ffffff; /* Nền bắt buộc phải là màu trắng */;
 }
 
 .element-product-designer .header {
-  position: relative;
-  width: 100%;
-  max-width: 1920px;
   min-height: 720px;
-  height: auto;
-  background-color: transparent;
 }
 
 .element-product-designer .BG {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   min-height: 720px;
-  background-size: 100% 100%;
   background-repeat: no-repeat;
-  z-index: 1;
-}
-
-.element-product-designer .layered-waves {
-  position: absolute;
-  top: 1px;
-  left: 0;
-  width: 100%;
-  height: 489px;
-  transform: rotate(180deg);
-  z-index: 2;
-}
-
-.element-product-designer .vector-7 {
-  position: absolute;
-  top: calc(50.00% - 13px);
-  left: calc(50.00% - 41px);
-  width: 81px;
-  height: 31px;
-}
-
-.element-product-designer .vector-8 {
-  position: absolute;
-  top: calc(50.00% - 13px);
-  left: calc(50.00% - 33px);
-  width: 66px;
-  height: 28px;
-}
-
-.element-product-designer .tittle {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.element-product-designer .about {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 40px;
-  position: relative;
-  flex: 1;
-  flex-grow: 1;
-}
-
-.element-product-designer .latest-case-study {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 48px;
-  padding: 88px 300px;
-  position: relative;
-  flex: 0 0 auto;
-  background-color: var(--gray-50);
-}
-
-
-.element-product-designer .tags {
-  display: inline-flex;
-  align-items: flex-start;
-  gap: 8px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.element-product-designer .more-action {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  padding: 40px 0px 0px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.element-product-designer .div-3 {
-  align-items: center;
-  gap: 24px;
-  display: inline-flex;
-  flex-direction: column;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.element-product-designer .button-6 {
-  display: inline-flex;
-  align-items: flex-start;
-  gap: 16px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.element-product-designer .arrow-right {
-  position: relative;
-  width: 24px;
-  height: 24px;
-  transform: rotate(-180deg);
-}
-
-.element-product-designer .arrow-right-wrapper {
-  display: inline-flex;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 16px;
-  position: relative;
-  flex: 0 0 auto;
-  border-radius: 100px;
-  border: 2px solid;
-  border-color: var(--product-50);
 }
 
 .element-product-designer .pricing {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 48px;
-  padding: 88px 300px;
-  position: relative;
-  flex: 0 0 auto;
-  background-color: var(--gray-50);
-}
-
-.element-product-designer .text-wrapper-16 {
-  position: relative;
-  width: 1320px;
-  margin-top: -1px;
-  font-family: var(--product-designer-heading-01-font-family);
-  font-weight: var(--product-designer-heading-01-font-weight);
-  color: var(--gray-900);
-  font-size: var(--product-designer-heading-01-font-size);
-  text-align: center;
-  letter-spacing: var(--product-designer-heading-01-letter-spacing);
-  line-height: var(--product-designer-heading-01-line-height);
-  font-style: var(--product-designer-heading-01-font-style);
-}
-
-.element-product-designer .text-wrapper-17 {
-  position: relative;
-  width: 648px;
-  font-family: var(--product-designer-body-large-400-font-family);
-  font-weight: var(--product-designer-body-large-400-font-weight);
-  color: var(--gray-600);
-  font-size: var(--product-designer-body-large-400-font-size);
-  text-align: center;
-  letter-spacing: var(--product-designer-body-large-400-letter-spacing);
-  line-height: var(--product-designer-body-large-400-line-height);
-  font-style: var(--product-designer-body-large-400-font-style);
-}
-
-.element-product-designer .devider {
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  height: 1px;
-  object-fit: cover;
-}
-
-.element-product-designer .devider-2 {
-  width: 100%;
-  height: 2px;
-  position: relative;
-  align-self: stretch;
-}
-
-.element-product-designer .information-2 {
-  align-items: flex-start;
-  gap: 48px;
-  display: inline-flex;
-  flex-direction: column;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.element-product-designer .row-2 {
-  display: flex;
-  width: 648px;
-  align-items: flex-start;
-  gap: 18px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.element-product-designer .info {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 3px;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
   flex: 0 0 auto;
 }
 
 .element-product-designer .div-wrapper {
-  display: inline-flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 10px;
-  padding: 14px 0px;
-  position: relative;
   flex: 0 0 auto;
-  background-color: var(--gray-900);
-  border-radius: 50px;
 }
 
 .element-product-designer .footer-links {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 36px;
-  position: absolute;
   top: calc(50.00% - 12px);
   left: calc(50.00% - 156px);
 }
 
 :root {
-  --ceo-900: rgba(51, 19, 15, 1);
-  --ceo-800: rgba(102, 38, 29, 1);
-  --ceo-700: rgba(153, 57, 44, 1);
-  --ceo-600: rgba(204, 76, 58, 1);
-  --ceo-500: rgba(255, 95, 73, 1);
-  --ceo-400: rgba(255, 127, 109, 1);
-  --ceo-300: rgba(255, 159, 146, 1);
-  --ceo-200: rgba(255, 191, 182, 1);
-  --ceo-100: rgba(255, 223, 219, 1);
-  --ceo-50: rgba(255, 239, 237, 1);
-  --ceo-2900: rgba(13, 33, 89, 1);
-  --ceo-2800: rgba(21, 51, 103, 1);
-  --ceo-2700: rgba(39, 69, 119, 1);
-  --ceo-2600: rgba(62, 89, 133, 1);
-  --ceo-2500: rgba(83, 109, 151, 1);
-  --ceo-2400: rgba(109, 132, 166, 1);
-  --ceo-2300: rgba(136, 155, 182, 1);
-  --ceo-2200: rgba(169, 185, 204, 1);
-  --ceo-2100: rgba(207, 216, 229, 1);
-  --ceo-250: rgba(235, 239, 247, 1);
   --gray-900: rgba(18, 19, 20, 1);
-  --gray-800: rgba(34, 38, 40, 1);
   --gray-700: rgba(53, 58, 62, 1);
   --gray-600: rgba(72, 80, 87, 1);
   --gray-500: rgba(94, 105, 113, 1);
   --gray-400: rgba(123, 132, 139, 1);
   --gray-300: rgba(154, 161, 166, 1);
-  --gray-200: rgba(186, 191, 195, 1);
   --gray-100: rgba(223, 227, 229, 1);
   --gray-50: rgba(245, 246, 247, 1);
   --graywhite: rgba(255, 255, 255, 1);
-  --main-900: rgba(5, 24, 46, 1);
-  --main-800: rgba(9, 48, 92, 1);
-  --main-700: rgba(14, 71, 137, 1);
-  --main-600: rgba(18, 95, 183, 1);
-  --main-500: rgba(23, 119, 229, 1);
-  --main-400: rgba(69, 146, 234, 1);
-  --main-300: rgba(116, 173, 239, 1);
-  --main-200: rgba(162, 201, 245, 1);
-  --main-100: rgba(209, 228, 250, 1);
-  --main-50: rgba(232, 241, 252, 1);
-  --product-900: rgba(0, 37, 51, 1);
-  --product-800: rgba(0, 75, 102, 1);
-  --product-700: rgba(0, 112, 153, 1);
-  --product-600: rgba(0, 150, 204, 1);
   --product-500: rgba(0, 187, 255, 1);
-  --product-400: rgba(51, 201, 255, 1);
-  --product-300: rgba(102, 214, 255, 1);
-  --product-200: rgba(153, 228, 255, 1);
-  --product-100: rgba(204, 241, 255, 1);
   --product-50: rgba(230, 248, 255, 1);
-  --resume-900: rgba(41, 18, 17, 1);
-  --resume-800: rgba(83, 36, 34, 1);
-  --resume-700: rgba(124, 53, 51, 1);
-  --resume-600: rgba(166, 71, 68, 1);
-  --resume-500: rgba(207, 89, 85, 1);
-  --resume-400: rgba(217, 122, 119, 1);
-  --resume-300: rgba(226, 155, 153, 1);
-  --resume-200: rgba(236, 189, 187, 1);
-  --resume-100: rgba(245, 222, 221, 1);
-  --resume-50: rgba(250, 238, 238, 1);
-  --developer-900: rgba(49, 44, 19, 1);
-  --developer-800: rgba(97, 88, 39, 1);
-  --developer-700: rgba(146, 131, 58, 1);
-  --developer-600: rgba(194, 175, 78, 1);
-  --developer-500: rgba(243, 219, 97, 1);
-  --developer-400: rgba(245, 226, 129, 1);
-  --developer-300: rgba(248, 233, 160, 1);
-  --developer-200: rgba(250, 241, 192, 1);
-  --developer-100: rgba(253, 248, 223, 1);
-  --developer-50: rgba(254, 251, 239, 1);
-  --developer-2900: rgba(7, 22, 14, 1);
-  --developer-2800: rgba(14, 43, 27, 1);
-  --developer-2700: rgba(21, 65, 41, 1);
-  --developer-2600: rgba(28, 86, 54, 1);
-  --developer-2500: rgba(35, 108, 68, 1);
-  --developer-2400: rgba(79, 137, 105, 1);
-  --developer-2300: rgba(123, 167, 143, 1);
-  --developer-2200: rgba(167, 196, 180, 1);
-  --developer-2100: rgba(211, 226, 218, 1);
-  --developer-250: rgba(233, 240, 236, 1);
-  --ui-ux-designer900: rgba(29, 15, 48, 1);
-  --ui-ux-designer800: rgba(58, 29, 97, 1);
-  --ui-ux-designer700: rgba(88, 44, 145, 1);
-  --ui-ux-designer600: rgba(117, 58, 194, 1);
-  --ui-ux-designer500: rgba(146, 73, 242, 1);
-  --ui-ux-designer400: rgba(168, 109, 245, 1);
-  --ui-ux-designer300: rgba(190, 146, 247, 1);
-  --ui-ux-designer200: rgba(211, 182, 250, 1);
-  --ui-ux-designer100: rgba(233, 219, 252, 1);
-  --ui-ux-designer50: rgba(244, 237, 254, 1);
-  --doctor-900: rgba(51, 43, 5, 1);
-  --doctor-800: rgba(102, 87, 10, 1);
-  --doctor-700: rgba(153, 130, 16, 1);
-  --doctor-600: rgba(204, 174, 21, 1);
-  --doctor-500: rgba(255, 217, 26, 1);
-  --doctor-400: rgba(255, 225, 72, 1);
-  --doctor-300: rgba(255, 232, 118, 1);
-  --doctor-200: rgba(255, 240, 163, 1);
-  --doctor-100: rgba(255, 247, 209, 1);
-  --doctor-50: rgba(255, 251, 232, 1);
-  --photographer-900: rgba(9, 36, 15, 1);
-  --photographer-800: rgba(18, 71, 30, 1);
-  --photographer-700: rgba(27, 107, 44, 1);
-  --photographer-600: rgba(36, 142, 59, 1);
-  --photographer-500: rgba(45, 178, 74, 1);
-  --photographer-400: rgba(87, 193, 110, 1);
-  --photographer-300: rgba(129, 209, 146, 1);
-  --photographer-200: rgba(171, 224, 183, 1);
-  --photographer-100: rgba(213, 240, 219, 1);
-  --photographer-50: rgba(234, 247, 237, 1);
-  --CEO-display-01-font-family: "Satoshi", Helvetica;
-  --CEO-display-01-font-weight: 900;
-  --CEO-display-01-font-size: 80px;
-  --CEO-display-01-letter-spacing: 0px;
-  --CEO-display-01-line-height: 88px;
-  --CEO-display-01-font-style: normal;
-  --CEO-display-02-font-family: "Satoshi", Helvetica;
-  --CEO-display-02-font-weight: 900;
-  --CEO-display-02-font-size: 72px;
-  --CEO-display-02-letter-spacing: 0px;
-  --CEO-display-02-line-height: 80px;
-  --CEO-display-02-font-style: normal;
-  --CEO-heading-01-font-family: "Satoshi", Helvetica;
-  --CEO-heading-01-font-weight: 900;
-  --CEO-heading-01-font-size: 56px;
-  --CEO-heading-01-letter-spacing: 0px;
-  --CEO-heading-01-line-height: 64px;
-  --CEO-heading-01-font-style: normal;
-  --CEO-heading-02-font-family: "Satoshi", Helvetica;
-  --CEO-heading-02-font-weight: 900;
-  --CEO-heading-02-font-size: 48px;
-  --CEO-heading-02-letter-spacing: 0px;
-  --CEO-heading-02-line-height: 56px;
-  --CEO-heading-02-font-style: normal;
-  --CEO-heading-03-font-family: "Satoshi", Helvetica;
-  --CEO-heading-03-font-weight: 900;
-  --CEO-heading-03-font-size: 40px;
-  --CEO-heading-03-letter-spacing: 0px;
-  --CEO-heading-03-line-height: 48px;
-  --CEO-heading-03-font-style: normal;
-  --CEO-heading-04-font-family: "Satoshi", Helvetica;
-  --CEO-heading-04-font-weight: 900;
-  --CEO-heading-04-font-size: 32px;
-  --CEO-heading-04-letter-spacing: 0px;
-  --CEO-heading-04-line-height: 40px;
-  --CEO-heading-04-font-style: normal;
-  --CEO-heading-05-font-family: "Satoshi", Helvetica;
-  --CEO-heading-05-font-weight: 900;
-  --CEO-heading-05-font-size: 24px;
-  --CEO-heading-05-letter-spacing: 0px;
-  --CEO-heading-05-line-height: 32px;
-  --CEO-heading-05-font-style: normal;
-  --CEO-heading-06-font-family: "Satoshi", Helvetica;
-  --CEO-heading-06-font-weight: 900;
-  --CEO-heading-06-font-size: 16px;
-  --CEO-heading-06-letter-spacing: 0px;
-  --CEO-heading-06-line-height: 64px;
-  --CEO-heading-06-font-style: normal;
-  --CEO-caption-01-font-family: "Satoshi", Helvetica;
-  --CEO-caption-01-font-weight: 700;
-  --CEO-caption-01-font-size: 20px;
-  --CEO-caption-01-letter-spacing: 0px;
-  --CEO-caption-01-line-height: 20px;
-  --CEO-caption-01-font-style: normal;
-  --CEO-caption-02-font-family: "Satoshi", Helvetica;
-  --CEO-caption-02-font-weight: 700;
-  --CEO-caption-02-font-size: 18px;
-  --CEO-caption-02-letter-spacing: 0px;
-  --CEO-caption-02-line-height: 18px;
-  --CEO-caption-02-font-style: normal;
-  --CEO-caption-03-font-family: "Satoshi", Helvetica;
-  --CEO-caption-03-font-weight: 700;
-  --CEO-caption-03-font-size: 16px;
-  --CEO-caption-03-letter-spacing: 0px;
-  --CEO-caption-03-line-height: 16px;
-  --CEO-caption-03-font-style: normal;
-  --CEO-caption-04-font-family: "Satoshi", Helvetica;
-  --CEO-caption-04-font-weight: 700;
-  --CEO-caption-04-font-size: 14px;
-  --CEO-caption-04-letter-spacing: 0px;
-  --CEO-caption-04-line-height: 14px;
-  --CEO-caption-04-font-style: normal;
-  --CEO-caption-05-font-family: "Satoshi", Helvetica;
-  --CEO-caption-05-font-weight: 700;
-  --CEO-caption-05-font-size: 12px;
-  --CEO-caption-05-letter-spacing: 0px;
-  --CEO-caption-05-line-height: 12px;
-  --CEO-caption-05-font-style: normal;
-  --CEO-caption-06-font-family: "Satoshi", Helvetica;
-  --CEO-caption-06-font-weight: 700;
-  --CEO-caption-06-font-size: 10px;
-  --CEO-caption-06-letter-spacing: 0px;
-  --CEO-caption-06-line-height: 10px;
-  --CEO-caption-06-font-style: normal;
-  --CEO-body-XXL-400-font-family: "Satoshi", Helvetica;
-  --CEO-body-XXL-400-font-weight: 400;
-  --CEO-body-XXL-400-font-size: 24px;
-  --CEO-body-XXL-400-letter-spacing: 0px;
-  --CEO-body-XXL-400-line-height: 32px;
-  --CEO-body-XXL-400-font-style: normal;
-  --CEO-body-XXL-500-font-family: "Satoshi", Helvetica;
-  --CEO-body-XXL-500-font-weight: 500;
-  --CEO-body-XXL-500-font-size: 24px;
-  --CEO-body-XXL-500-letter-spacing: 0px;
-  --CEO-body-XXL-500-line-height: 32px;
-  --CEO-body-XXL-500-font-style: normal;
-  --CEO-body-XXL-700-font-family: "Satoshi", Helvetica;
-  --CEO-body-XXL-700-font-weight: 700;
-  --CEO-body-XXL-700-font-size: 24px;
-  --CEO-body-XXL-700-letter-spacing: 0px;
-  --CEO-body-XXL-700-line-height: 32px;
-  --CEO-body-XXL-700-font-style: normal;
-  --CEO-body-XL-400-font-family: "Satoshi", Helvetica;
-  --CEO-body-XL-400-font-weight: 400;
-  --CEO-body-XL-400-font-size: 20px;
-  --CEO-body-XL-400-letter-spacing: 0px;
-  --CEO-body-XL-400-line-height: 28px;
-  --CEO-body-XL-400-font-style: normal;
-  --CEO-body-XL-500-font-family: "Satoshi", Helvetica;
-  --CEO-body-XL-500-font-weight: 500;
-  --CEO-body-XL-500-font-size: 20px;
-  --CEO-body-XL-500-letter-spacing: 0px;
-  --CEO-body-XL-500-line-height: 28px;
-  --CEO-body-XL-500-font-style: normal;
-  --CEO-body-XL-700-font-family: "Satoshi", Helvetica;
-  --CEO-body-XL-700-font-weight: 700;
-  --CEO-body-XL-700-font-size: 20px;
-  --CEO-body-XL-700-letter-spacing: 0px;
-  --CEO-body-XL-700-line-height: 28px;
-  --CEO-body-XL-700-font-style: normal;
-  --CEO-body-large-400-font-family: "Satoshi", Helvetica;
-  --CEO-body-large-400-font-weight: 400;
-  --CEO-body-large-400-font-size: 18px;
-  --CEO-body-large-400-letter-spacing: 0px;
-  --CEO-body-large-400-line-height: 24px;
-  --CEO-body-large-400-font-style: normal;
-  --CEO-body-large-500-font-family: "Satoshi", Helvetica;
-  --CEO-body-large-500-font-weight: 500;
-  --CEO-body-large-500-font-size: 18px;
-  --CEO-body-large-500-letter-spacing: 0px;
-  --CEO-body-large-500-line-height: 24px;
-  --CEO-body-large-500-font-style: normal;
-  --CEO-body-large-700-font-family: "Satoshi", Helvetica;
-  --CEO-body-large-700-font-weight: 700;
-  --CEO-body-large-700-font-size: 18px;
-  --CEO-body-large-700-letter-spacing: 0px;
-  --CEO-body-large-700-line-height: 24px;
-  --CEO-body-large-700-font-style: normal;
-  --CEO-body-regular-400-font-family: "Satoshi", Helvetica;
-  --CEO-body-regular-400-font-weight: 400;
-  --CEO-body-regular-400-font-size: 16px;
-  --CEO-body-regular-400-letter-spacing: 0px;
-  --CEO-body-regular-400-line-height: 24px;
-  --CEO-body-regular-400-font-style: normal;
-  --CEO-body-regular-500-font-family: "Satoshi", Helvetica;
-  --CEO-body-regular-500-font-weight: 500;
-  --CEO-body-regular-500-font-size: 16px;
-  --CEO-body-regular-500-letter-spacing: 0px;
-  --CEO-body-regular-500-line-height: 24px;
-  --CEO-body-regular-500-font-style: normal;
-  --CEO-body-regular-700-font-family: "Satoshi", Helvetica;
-  --CEO-body-regular-700-font-weight: 700;
-  --CEO-body-regular-700-font-size: 16px;
-  --CEO-body-regular-700-letter-spacing: 0px;
-  --CEO-body-regular-700-line-height: 24px;
-  --CEO-body-regular-700-font-style: normal;
-  --CEO-body-small-400-font-family: "Satoshi", Helvetica;
-  --CEO-body-small-400-font-weight: 400;
-  --CEO-body-small-400-font-size: 14px;
-  --CEO-body-small-400-letter-spacing: 0px;
-  --CEO-body-small-400-line-height: 20px;
-  --CEO-body-small-400-font-style: normal;
-  --CEO-body-small-500-font-family: "Satoshi", Helvetica;
-  --CEO-body-small-500-font-weight: 500;
-  --CEO-body-small-500-font-size: 14px;
-  --CEO-body-small-500-letter-spacing: 0px;
-  --CEO-body-small-500-line-height: 20px;
-  --CEO-body-small-500-font-style: normal;
-  --CEO-body-small-700-font-family: "Satoshi", Helvetica;
-  --CEO-body-small-700-font-weight: 700;
-  --CEO-body-small-700-font-size: 14px;
-  --CEO-body-small-700-letter-spacing: 0px;
-  --CEO-body-small-700-line-height: 20px;
-  --CEO-body-small-700-font-style: normal;
-  --CEO-body-XS-400-font-family: "Satoshi", Helvetica;
-  --CEO-body-XS-400-font-weight: 400;
-  --CEO-body-XS-400-font-size: 12px;
-  --CEO-body-XS-400-letter-spacing: 0px;
-  --CEO-body-XS-400-line-height: 16px;
-  --CEO-body-XS-400-font-style: normal;
-  --CEO-body-XS-500-font-family: "Satoshi", Helvetica;
-  --CEO-body-XS-500-font-weight: 500;
-  --CEO-body-XS-500-font-size: 12px;
-  --CEO-body-XS-500-letter-spacing: 0px;
-  --CEO-body-XS-500-line-height: 16px;
-  --CEO-body-XS-500-font-style: normal;
-  --CEO-body-XS-700-font-family: "Satoshi", Helvetica;
-  --CEO-body-XS-700-font-weight: 700;
-  --CEO-body-XS-700-font-size: 12px;
-  --CEO-body-XS-700-letter-spacing: 0px;
-  --CEO-body-XS-700-line-height: 16px;
-  --CEO-body-XS-700-font-style: normal;
-  --main-home-heading-display-01-font-family: "Inter", Helvetica;
-  --main-home-heading-display-01-font-weight: 600;
-  --main-home-heading-display-01-font-size: 80px;
-  --main-home-heading-display-01-letter-spacing: 0px;
-  --main-home-heading-display-01-line-height: 80px;
-  --main-home-heading-display-01-font-style: normal;
-  --main-home-heading-01-font-family: "Inter", Helvetica;
-  --main-home-heading-01-font-weight: 600;
-  --main-home-heading-01-font-size: 48px;
-  --main-home-heading-01-letter-spacing: 0px;
-  --main-home-heading-01-line-height: 56px;
-  --main-home-heading-01-font-style: normal;
-  --main-home-heading-02-font-family: "Inter", Helvetica;
-  --main-home-heading-02-font-weight: 600;
-  --main-home-heading-02-font-size: 40px;
-  --main-home-heading-02-letter-spacing: 0px;
-  --main-home-heading-02-line-height: 48px;
-  --main-home-heading-02-font-style: normal;
-  --main-home-heading-03-font-family: "Inter", Helvetica;
-  --main-home-heading-03-font-weight: 600;
-  --main-home-heading-03-font-size: 32px;
-  --main-home-heading-03-letter-spacing: 0px;
-  --main-home-heading-03-line-height: 40px;
-  --main-home-heading-03-font-style: normal;
-  --main-home-heading-04-font-family: "Inter", Helvetica;
-  --main-home-heading-04-font-weight: 600;
-  --main-home-heading-04-font-size: 24px;
-  --main-home-heading-04-letter-spacing: 0px;
-  --main-home-heading-04-line-height: 32px;
-  --main-home-heading-04-font-style: normal;
-  --main-home-heading-05-font-family: "Inter", Helvetica;
-  --main-home-heading-05-font-weight: 600;
-  --main-home-heading-05-font-size: 18px;
-  --main-home-heading-05-letter-spacing: 0px;
-  --main-home-heading-05-line-height: 64px;
-  --main-home-heading-05-font-style: normal;
-  --main-home-caption-01-font-family: "Inter", Helvetica;
-  --main-home-caption-01-font-weight: 600;
-  --main-home-caption-01-font-size: 20px;
-  --main-home-caption-01-letter-spacing: 0px;
-  --main-home-caption-01-line-height: 32px;
-  --main-home-caption-01-font-style: normal;
-  --main-home-caption-02-font-family: "Inter", Helvetica;
-  --main-home-caption-02-font-weight: 500;
-  --main-home-caption-02-font-size: 18px;
-  --main-home-caption-02-letter-spacing: 0px;
-  --main-home-caption-02-line-height: 28px;
-  --main-home-caption-02-font-style: normal;
-  --main-home-caption-03-font-family: "Inter", Helvetica;
-  --main-home-caption-03-font-weight: 600;
-  --main-home-caption-03-font-size: 16px;
-  --main-home-caption-03-letter-spacing: 0px;
-  --main-home-caption-03-line-height: 24px;
-  --main-home-caption-03-font-style: normal;
-  --main-home-caption-04-font-family: "Inter", Helvetica;
-  --main-home-caption-04-font-weight: 600;
-  --main-home-caption-04-font-size: 14px;
-  --main-home-caption-04-letter-spacing: 0px;
-  --main-home-caption-04-line-height: 20px;
-  --main-home-caption-04-font-style: normal;
-  --main-home-caption-05-font-family: "Inter", Helvetica;
-  --main-home-caption-05-font-weight: 600;
-  --main-home-caption-05-font-size: 12px;
-  --main-home-caption-05-letter-spacing: 0px;
-  --main-home-caption-05-line-height: 16px;
-  --main-home-caption-05-font-style: normal;
-  --main-home-caption-06-font-family: "Inter", Helvetica;
-  --main-home-caption-06-font-weight: 600;
-  --main-home-caption-06-font-size: 10px;
-  --main-home-caption-06-letter-spacing: 0px;
-  --main-home-caption-06-line-height: 12px;
-  --main-home-caption-06-font-style: normal;
-  --main-home-body-XXL-400-font-family: "Inter", Helvetica;
-  --main-home-body-XXL-400-font-weight: 400;
-  --main-home-body-XXL-400-font-size: 24px;
-  --main-home-body-XXL-400-letter-spacing: 0px;
-  --main-home-body-XXL-400-line-height: 36px;
-  --main-home-body-XXL-400-font-style: normal;
-  --main-home-body-XXL-500-font-family: "Inter", Helvetica;
-  --main-home-body-XXL-500-font-weight: 500;
-  --main-home-body-XXL-500-font-size: 24px;
-  --main-home-body-XXL-500-letter-spacing: 0px;
-  --main-home-body-XXL-500-line-height: 36px;
-  --main-home-body-XXL-500-font-style: normal;
-  --main-home-body-XL-400-font-family: "Inter", Helvetica;
-  --main-home-body-XL-400-font-weight: 400;
-  --main-home-body-XL-400-font-size: 20px;
-  --main-home-body-XL-400-letter-spacing: 0px;
-  --main-home-body-XL-400-line-height: 32px;
-  --main-home-body-XL-400-font-style: normal;
-  --main-home-body-XL-500-font-family: "Inter", Helvetica;
-  --main-home-body-XL-500-font-weight: 500;
-  --main-home-body-XL-500-font-size: 20px;
-  --main-home-body-XL-500-letter-spacing: 0px;
-  --main-home-body-XL-500-line-height: 32px;
-  --main-home-body-XL-500-font-style: normal;
-  --main-home-body-large-400-font-family: "Inter", Helvetica;
-  --main-home-body-large-400-font-weight: 400;
-  --main-home-body-large-400-font-size: 18px;
-  --main-home-body-large-400-letter-spacing: 0px;
-  --main-home-body-large-400-line-height: 26px;
-  --main-home-body-large-400-font-style: normal;
-  --main-home-body-large-500-font-family: "Inter", Helvetica;
-  --main-home-body-large-500-font-weight: 500;
-  --main-home-body-large-500-font-size: 18px;
-  --main-home-body-large-500-letter-spacing: 0px;
-  --main-home-body-large-500-line-height: 26px;
-  --main-home-body-large-500-font-style: normal;
-  --main-home-body-regular-400-font-family: "Inter", Helvetica;
-  --main-home-body-regular-400-font-weight: 400;
-  --main-home-body-regular-400-font-size: 16px;
-  --main-home-body-regular-400-letter-spacing: 0px;
-  --main-home-body-regular-400-line-height: 24px;
-  --main-home-body-regular-400-font-style: normal;
-  --main-home-body-regular-500-font-family: "Inter", Helvetica;
-  --main-home-body-regular-500-font-weight: 500;
-  --main-home-body-regular-500-font-size: 16px;
-  --main-home-body-regular-500-letter-spacing: 0px;
-  --main-home-body-regular-500-line-height: 24px;
-  --main-home-body-regular-500-font-style: normal;
-  --main-home-body-small-400-font-family: "Inter", Helvetica;
-  --main-home-body-small-400-font-weight: 400;
-  --main-home-body-small-400-font-size: 14px;
-  --main-home-body-small-400-letter-spacing: 0px;
-  --main-home-body-small-400-line-height: 20px;
-  --main-home-body-small-400-font-style: normal;
-  --main-home-body-small-500-font-family: "Inter", Helvetica;
-  --main-home-body-small-500-font-weight: 500;
-  --main-home-body-small-500-font-size: 14px;
-  --main-home-body-small-500-letter-spacing: 0px;
-  --main-home-body-small-500-line-height: 20px;
-  --main-home-body-small-500-font-style: normal;
-  --main-home-body-XS-400-font-family: "Inter", Helvetica;
-  --main-home-body-XS-400-font-weight: 400;
-  --main-home-body-XS-400-font-size: 12px;
-  --main-home-body-XS-400-letter-spacing: 0px;
-  --main-home-body-XS-400-line-height: 18px;
-  --main-home-body-XS-400-font-style: normal;
-  --main-home-body-XS-500-font-family: "Inter", Helvetica;
-  --main-home-body-XS-500-font-weight: 500;
-  --main-home-body-XS-500-font-size: 12px;
-  --main-home-body-XS-500-letter-spacing: 0px;
-  --main-home-body-XS-500-line-height: 18px;
-  --main-home-body-XS-500-font-style: normal;
   --product-designer-heading-01-font-family: "Work Sans", Helvetica;
   --product-designer-heading-01-font-weight: 700;
   --product-designer-heading-01-font-size: 56px;
@@ -724,12 +76,6 @@ img {
   --product-designer-heading-02-letter-spacing: 0px;
   --product-designer-heading-02-line-height: 56px;
   --product-designer-heading-02-font-style: normal;
-  --product-designer-heading-03-font-family: "Work Sans", Helvetica;
-  --product-designer-heading-03-font-weight: 700;
-  --product-designer-heading-03-font-size: 40px;
-  --product-designer-heading-03-letter-spacing: 0px;
-  --product-designer-heading-03-line-height: 48px;
-  --product-designer-heading-03-font-style: normal;
   --product-designer-heading-04-font-family: "Work Sans", Helvetica;
   --product-designer-heading-04-font-weight: 700;
   --product-designer-heading-04-font-size: 32px;
@@ -742,8 +88,7 @@ img {
   --product-designer-heading-06-letter-spacing: 0px;
   --product-designer-heading-06-line-height: 56px;
   --product-designer-heading-06-font-style: normal;
-  --product-designer-heading-product-designer-heading-05-font-family:
-    "Work Sans", Helvetica;
+  --product-designer-heading-product-designer-heading-05-font-family: "Work Sans", Helvetica;
   --product-designer-heading-product-designer-heading-05-font-weight: 700;
   --product-designer-heading-product-designer-heading-05-font-size: 24px;
   --product-designer-heading-product-designer-heading-05-letter-spacing: 0px;
@@ -755,12 +100,6 @@ img {
   --product-designer-caption-01-letter-spacing: 0px;
   --product-designer-caption-01-line-height: 20px;
   --product-designer-caption-01-font-style: normal;
-  --product-designer-caption-02-font-family: "Work Sans", Helvetica;
-  --product-designer-caption-02-font-weight: 500;
-  --product-designer-caption-02-font-size: 18px;
-  --product-designer-caption-02-letter-spacing: 0px;
-  --product-designer-caption-02-line-height: 18px;
-  --product-designer-caption-02-font-style: normal;
   --product-designer-caption-03-font-family: "Work Sans", Helvetica;
   --product-designer-caption-03-font-weight: 500;
   --product-designer-caption-03-font-size: 16px;
@@ -773,48 +112,18 @@ img {
   --product-designer-caption-04-letter-spacing: 0px;
   --product-designer-caption-04-line-height: 14px;
   --product-designer-caption-04-font-style: normal;
-  --product-designer-caption-05-font-family: "Work Sans", Helvetica;
-  --product-designer-caption-05-font-weight: 500;
-  --product-designer-caption-05-font-size: 12px;
-  --product-designer-caption-05-letter-spacing: 0px;
-  --product-designer-caption-05-line-height: 12px;
-  --product-designer-caption-05-font-style: normal;
-  --product-designer-caption-06-font-family: "Work Sans", Helvetica;
-  --product-designer-caption-06-font-weight: 500;
-  --product-designer-caption-06-font-size: 10px;
-  --product-designer-caption-06-letter-spacing: 0px;
-  --product-designer-caption-06-line-height: 10px;
-  --product-designer-caption-06-font-style: normal;
   --product-designer-body-XXL-400-font-family: "Work Sans", Helvetica;
   --product-designer-body-XXL-400-font-weight: 400;
   --product-designer-body-XXL-400-font-size: 24px;
   --product-designer-body-XXL-400-letter-spacing: 0px;
   --product-designer-body-XXL-400-line-height: 32px;
   --product-designer-body-XXL-400-font-style: normal;
-  --product-designer-body-XXL-500-font-family: "Work Sans", Helvetica;
-  --product-designer-body-XXL-500-font-weight: 500;
-  --product-designer-body-XXL-500-font-size: 24px;
-  --product-designer-body-XXL-500-letter-spacing: 0px;
-  --product-designer-body-XXL-500-line-height: 32px;
-  --product-designer-body-XXL-500-font-style: normal;
-  --product-designer-body-XXL-600-font-family: "Work Sans", Helvetica;
-  --product-designer-body-XXL-600-font-weight: 600;
-  --product-designer-body-XXL-600-font-size: 24px;
-  --product-designer-body-XXL-600-letter-spacing: 0px;
-  --product-designer-body-XXL-600-line-height: 32px;
-  --product-designer-body-XXL-600-font-style: normal;
   --product-designer-body-XL-400-font-family: "Work Sans", Helvetica;
   --product-designer-body-XL-400-font-weight: 400;
   --product-designer-body-XL-400-font-size: 20px;
   --product-designer-body-XL-400-letter-spacing: 0px;
   --product-designer-body-XL-400-line-height: 28px;
   --product-designer-body-XL-400-font-style: normal;
-  --product-designer-body-XL-500-font-family: "Work Sans", Helvetica;
-  --product-designer-body-XL-500-font-weight: 500;
-  --product-designer-body-XL-500-font-size: 20px;
-  --product-designer-body-XL-500-letter-spacing: 0px;
-  --product-designer-body-XL-500-line-height: 28px;
-  --product-designer-body-XL-500-font-style: normal;
   --product-designer-body-XL-600-font-family: "Work Sans", Helvetica;
   --product-designer-body-XL-600-font-weight: 600;
   --product-designer-body-XL-600-font-size: 20px;
@@ -827,18 +136,6 @@ img {
   --product-designer-body-large-400-letter-spacing: 0px;
   --product-designer-body-large-400-line-height: 24px;
   --product-designer-body-large-400-font-style: normal;
-  --product-designer-body-large-500-font-family: "Work Sans", Helvetica;
-  --product-designer-body-large-500-font-weight: 500;
-  --product-designer-body-large-500-font-size: 18px;
-  --product-designer-body-large-500-letter-spacing: 0px;
-  --product-designer-body-large-500-line-height: 24px;
-  --product-designer-body-large-500-font-style: normal;
-  --product-designer-body-large-600-font-family: "Work Sans", Helvetica;
-  --product-designer-body-large-600-font-weight: 600;
-  --product-designer-body-large-600-font-size: 18px;
-  --product-designer-body-large-600-letter-spacing: 0px;
-  --product-designer-body-large-600-line-height: 24px;
-  --product-designer-body-large-600-font-style: normal;
   --product-designer-body-regular-400-font-family: "Work Sans", Helvetica;
   --product-designer-body-regular-400-font-weight: 400;
   --product-designer-body-regular-400-font-size: 16px;
@@ -857,1178 +154,9 @@ img {
   --product-designer-body-regular-600-letter-spacing: 0px;
   --product-designer-body-regular-600-line-height: 24px;
   --product-designer-body-regular-600-font-style: normal;
-  --product-designer-body-small-400-font-family: "Work Sans", Helvetica;
-  --product-designer-body-small-400-font-weight: 400;
-  --product-designer-body-small-400-font-size: 14px;
-  --product-designer-body-small-400-letter-spacing: 0px;
-  --product-designer-body-small-400-line-height: 20px;
-  --product-designer-body-small-400-font-style: normal;
-  --product-designer-body-small-500-font-family: "Work Sans", Helvetica;
-  --product-designer-body-small-500-font-weight: 500;
-  --product-designer-body-small-500-font-size: 14px;
-  --product-designer-body-small-500-letter-spacing: 0px;
-  --product-designer-body-small-500-line-height: 20px;
-  --product-designer-body-small-500-font-style: normal;
-  --product-designer-body-small-600-font-family: "Work Sans", Helvetica;
-  --product-designer-body-small-600-font-weight: 600;
-  --product-designer-body-small-600-font-size: 14px;
-  --product-designer-body-small-600-letter-spacing: 0px;
-  --product-designer-body-small-600-line-height: 20px;
-  --product-designer-body-small-600-font-style: normal;
-  --product-designer-body-XS-400-font-family: "Work Sans", Helvetica;
-  --product-designer-body-XS-400-font-weight: 400;
-  --product-designer-body-XS-400-font-size: 12px;
-  --product-designer-body-XS-400-letter-spacing: 0px;
-  --product-designer-body-XS-400-line-height: 16px;
-  --product-designer-body-XS-400-font-style: normal;
-  --product-designer-body-XS-500-font-family: "Work Sans", Helvetica;
-  --product-designer-body-XS-500-font-weight: 500;
-  --product-designer-body-XS-500-font-size: 12px;
-  --product-designer-body-XS-500-letter-spacing: 0px;
-  --product-designer-body-XS-500-line-height: 16px;
-  --product-designer-body-XS-500-font-style: normal;
-  --product-designer-body-XS-600-font-family: "Work Sans", Helvetica;
-  --product-designer-body-XS-600-font-weight: 600;
-  --product-designer-body-XS-600-font-size: 12px;
-  --product-designer-body-XS-600-letter-spacing: 0px;
-  --product-designer-body-XS-600-line-height: 16px;
-  --product-designer-body-XS-600-font-style: normal;
-  --developer-display-01-font-family: "Inter", Helvetica;
-  --developer-display-01-font-weight: 700;
-  --developer-display-01-font-size: 64px;
-  --developer-display-01-letter-spacing: 0px;
-  --developer-display-01-line-height: 72px;
-  --developer-display-01-font-style: normal;
-  --developer-heading-01-font-family: "Inter", Helvetica;
-  --developer-heading-01-font-weight: 700;
-  --developer-heading-01-font-size: 48px;
-  --developer-heading-01-letter-spacing: 0px;
-  --developer-heading-01-line-height: 56px;
-  --developer-heading-01-font-style: normal;
-  --developer-heading-02-font-family: "Inter", Helvetica;
-  --developer-heading-02-font-weight: 700;
-  --developer-heading-02-font-size: 40px;
-  --developer-heading-02-letter-spacing: 0px;
-  --developer-heading-02-line-height: 48px;
-  --developer-heading-02-font-style: normal;
-  --developer-heading-03-font-family: "Inter", Helvetica;
-  --developer-heading-03-font-weight: 700;
-  --developer-heading-03-font-size: 36px;
-  --developer-heading-03-letter-spacing: 0px;
-  --developer-heading-03-line-height: 44px;
-  --developer-heading-03-font-style: normal;
-  --developer-heading-04-font-family: "Inter", Helvetica;
-  --developer-heading-04-font-weight: 700;
-  --developer-heading-04-font-size: 32px;
-  --developer-heading-04-letter-spacing: 0px;
-  --developer-heading-04-line-height: 40px;
-  --developer-heading-04-font-style: normal;
-  --developer-heading-05-font-family: "Inter", Helvetica;
-  --developer-heading-05-font-weight: 700;
-  --developer-heading-05-font-size: 24px;
-  --developer-heading-05-letter-spacing: 0px;
-  --developer-heading-05-line-height: 32px;
-  --developer-heading-05-font-style: normal;
-  --developer-button-medium-font-family: "Inter", Helvetica;
-  --developer-button-medium-font-weight: 700;
-  --developer-button-medium-font-size: 16px;
-  --developer-button-medium-letter-spacing: 0px;
-  --developer-button-medium-line-height: 56px;
-  --developer-button-medium-font-style: normal;
-  --developer-button-small-font-family: "Inter", Helvetica;
-  --developer-button-small-font-weight: 700;
-  --developer-button-small-font-size: 14px;
-  --developer-button-small-letter-spacing: 0px;
-  --developer-button-small-line-height: 48px;
-  --developer-button-small-font-style: normal;
-  --developer-caption-01-font-family: "Inter", Helvetica;
-  --developer-caption-01-font-weight: 600;
-  --developer-caption-01-font-size: 20px;
-  --developer-caption-01-letter-spacing: 0px;
-  --developer-caption-01-line-height: 20px;
-  --developer-caption-01-font-style: normal;
-  --developer-caption-02-font-family: "Inter", Helvetica;
-  --developer-caption-02-font-weight: 600;
-  --developer-caption-02-font-size: 18px;
-  --developer-caption-02-letter-spacing: 0px;
-  --developer-caption-02-line-height: 18px;
-  --developer-caption-02-font-style: normal;
-  --developer-caption-03-font-family: "Inter", Helvetica;
-  --developer-caption-03-font-weight: 600;
-  --developer-caption-03-font-size: 16px;
-  --developer-caption-03-letter-spacing: 0px;
-  --developer-caption-03-line-height: 16px;
-  --developer-caption-03-font-style: normal;
-  --developer-caption-04-font-family: "Inter", Helvetica;
-  --developer-caption-04-font-weight: 600;
-  --developer-caption-04-font-size: 14px;
-  --developer-caption-04-letter-spacing: 0px;
-  --developer-caption-04-line-height: 14px;
-  --developer-caption-04-font-style: normal;
-  --developer-caption-05-font-family: "Inter", Helvetica;
-  --developer-caption-05-font-weight: 600;
-  --developer-caption-05-font-size: 12px;
-  --developer-caption-05-letter-spacing: 0px;
-  --developer-caption-05-line-height: 12px;
-  --developer-caption-05-font-style: normal;
-  --developer-caption-06-font-family: "Inter", Helvetica;
-  --developer-caption-06-font-weight: 600;
-  --developer-caption-06-font-size: 10px;
-  --developer-caption-06-letter-spacing: 0px;
-  --developer-caption-06-line-height: 10px;
-  --developer-caption-06-font-style: normal;
-  --developer-body-XXL-400-font-family: "Inter", Helvetica;
-  --developer-body-XXL-400-font-weight: 400;
-  --developer-body-XXL-400-font-size: 24px;
-  --developer-body-XXL-400-letter-spacing: 0px;
-  --developer-body-XXL-400-line-height: 32px;
-  --developer-body-XXL-400-font-style: normal;
-  --developer-body-XXL-500-font-family: "Inter", Helvetica;
-  --developer-body-XXL-500-font-weight: 500;
-  --developer-body-XXL-500-font-size: 24px;
-  --developer-body-XXL-500-letter-spacing: 0px;
-  --developer-body-XXL-500-line-height: 32px;
-  --developer-body-XXL-500-font-style: normal;
-  --developer-body-XXL-600-font-family: "Inter", Helvetica;
-  --developer-body-XXL-600-font-weight: 600;
-  --developer-body-XXL-600-font-size: 24px;
-  --developer-body-XXL-600-letter-spacing: 0px;
-  --developer-body-XXL-600-line-height: 32px;
-  --developer-body-XXL-600-font-style: normal;
-  --developer-body-XL-400-font-family: "Inter", Helvetica;
-  --developer-body-XL-400-font-weight: 400;
-  --developer-body-XL-400-font-size: 20px;
-  --developer-body-XL-400-letter-spacing: 0px;
-  --developer-body-XL-400-line-height: 28px;
-  --developer-body-XL-400-font-style: normal;
-  --developer-body-XL-500-font-family: "Inter", Helvetica;
-  --developer-body-XL-500-font-weight: 500;
-  --developer-body-XL-500-font-size: 20px;
-  --developer-body-XL-500-letter-spacing: 0px;
-  --developer-body-XL-500-line-height: 28px;
-  --developer-body-XL-500-font-style: normal;
-  --developer-body-XL-600-font-family: "Inter", Helvetica;
-  --developer-body-XL-600-font-weight: 600;
-  --developer-body-XL-600-font-size: 20px;
-  --developer-body-XL-600-letter-spacing: 0px;
-  --developer-body-XL-600-line-height: 28px;
-  --developer-body-XL-600-font-style: normal;
-  --developer-body-large-400-font-family: "Inter", Helvetica;
-  --developer-body-large-400-font-weight: 400;
-  --developer-body-large-400-font-size: 18px;
-  --developer-body-large-400-letter-spacing: 0px;
-  --developer-body-large-400-line-height: 26px;
-  --developer-body-large-400-font-style: normal;
-  --developer-body-large-500-font-family: "Inter", Helvetica;
-  --developer-body-large-500-font-weight: 500;
-  --developer-body-large-500-font-size: 18px;
-  --developer-body-large-500-letter-spacing: 0px;
-  --developer-body-large-500-line-height: 24px;
-  --developer-body-large-500-font-style: normal;
-  --developer-body-large-600-font-family: "Inter", Helvetica;
-  --developer-body-large-600-font-weight: 600;
-  --developer-body-large-600-font-size: 18px;
-  --developer-body-large-600-letter-spacing: 0px;
-  --developer-body-large-600-line-height: 26px;
-  --developer-body-large-600-font-style: normal;
-  --developer-body-regular-400-font-family: "Inter", Helvetica;
-  --developer-body-regular-400-font-weight: 400;
-  --developer-body-regular-400-font-size: 16px;
-  --developer-body-regular-400-letter-spacing: 0px;
-  --developer-body-regular-400-line-height: 24px;
-  --developer-body-regular-400-font-style: normal;
-  --developer-body-regular-500-font-family: "Inter", Helvetica;
-  --developer-body-regular-500-font-weight: 500;
-  --developer-body-regular-500-font-size: 16px;
-  --developer-body-regular-500-letter-spacing: 0px;
-  --developer-body-regular-500-line-height: 24px;
-  --developer-body-regular-500-font-style: normal;
-  --developer-body-regular-600-font-family: "Inter", Helvetica;
-  --developer-body-regular-600-font-weight: 600;
-  --developer-body-regular-600-font-size: 16px;
-  --developer-body-regular-600-letter-spacing: 0px;
-  --developer-body-regular-600-line-height: 24px;
-  --developer-body-regular-600-font-style: normal;
-  --developer-body-small-400-font-family: "Inter", Helvetica;
-  --developer-body-small-400-font-weight: 400;
-  --developer-body-small-400-font-size: 14px;
-  --developer-body-small-400-letter-spacing: 0px;
-  --developer-body-small-400-line-height: 20px;
-  --developer-body-small-400-font-style: normal;
-  --developer-body-small-500-font-family: "Inter", Helvetica;
-  --developer-body-small-500-font-weight: 500;
-  --developer-body-small-500-font-size: 14px;
-  --developer-body-small-500-letter-spacing: 0px;
-  --developer-body-small-500-line-height: 20px;
-  --developer-body-small-500-font-style: normal;
-  --developer-body-small-600-font-family: "Inter", Helvetica;
-  --developer-body-small-600-font-weight: 600;
-  --developer-body-small-600-font-size: 14px;
-  --developer-body-small-600-letter-spacing: 0px;
-  --developer-body-small-600-line-height: 20px;
-  --developer-body-small-600-font-style: normal;
-  --developer-body-XS-400-font-family: "Inter", Helvetica;
-  --developer-body-XS-400-font-weight: 400;
-  --developer-body-XS-400-font-size: 12px;
-  --developer-body-XS-400-letter-spacing: 0px;
-  --developer-body-XS-400-line-height: 16px;
-  --developer-body-XS-400-font-style: normal;
-  --developer-body-XS-500-font-family: "Inter", Helvetica;
-  --developer-body-XS-500-font-weight: 500;
-  --developer-body-XS-500-font-size: 12px;
-  --developer-body-XS-500-letter-spacing: 0px;
-  --developer-body-XS-500-line-height: 16px;
-  --developer-body-XS-500-font-style: normal;
-  --developer-body-XS-600-font-family: "Inter", Helvetica;
-  --developer-body-XS-600-font-weight: 600;
-  --developer-body-XS-600-font-size: 12px;
-  --developer-body-XS-600-letter-spacing: 0px;
-  --developer-body-XS-600-line-height: 16px;
-  --developer-body-XS-600-font-style: normal;
-  --resume-heading-01-font-family: "Fira Sans", Helvetica;
-  --resume-heading-01-font-weight: 600;
-  --resume-heading-01-font-size: 40px;
-  --resume-heading-01-letter-spacing: 0px;
-  --resume-heading-01-line-height: 48px;
-  --resume-heading-01-font-style: normal;
-  --resume-heading-02-font-family: "Fira Sans", Helvetica;
-  --resume-heading-02-font-weight: 600;
-  --resume-heading-02-font-size: 32px;
-  --resume-heading-02-letter-spacing: 0px;
-  --resume-heading-02-line-height: 40px;
-  --resume-heading-02-font-style: normal;
-  --resume-heading-03-font-family: "Fira Sans", Helvetica;
-  --resume-heading-03-font-weight: 600;
-  --resume-heading-03-font-size: 24px;
-  --resume-heading-03-letter-spacing: 0px;
-  --resume-heading-03-line-height: 32px;
-  --resume-heading-03-font-style: normal;
-  --resume-heading-04-font-family: "Fira Sans", Helvetica;
-  --resume-heading-04-font-weight: 600;
-  --resume-heading-04-font-size: 14px;
-  --resume-heading-04-letter-spacing: 0px;
-  --resume-heading-04-line-height: 48px;
-  --resume-heading-04-font-style: normal;
-  --resume-caption-01-font-family: "Fira Sans", Helvetica;
-  --resume-caption-01-font-weight: 500;
-  --resume-caption-01-font-size: 20px;
-  --resume-caption-01-letter-spacing: 0px;
-  --resume-caption-01-line-height: 20px;
-  --resume-caption-01-font-style: normal;
-  --resume-caption-02-font-family: "Fira Sans", Helvetica;
-  --resume-caption-02-font-weight: 500;
-  --resume-caption-02-font-size: 18px;
-  --resume-caption-02-letter-spacing: 0px;
-  --resume-caption-02-line-height: 18px;
-  --resume-caption-02-font-style: normal;
-  --resume-caption-03-font-family: "Fira Sans", Helvetica;
-  --resume-caption-03-font-weight: 500;
-  --resume-caption-03-font-size: 16px;
-  --resume-caption-03-letter-spacing: 0px;
-  --resume-caption-03-line-height: 16px;
-  --resume-caption-03-font-style: normal;
-  --resume-caption-04-font-family: "Fira Sans", Helvetica;
-  --resume-caption-04-font-weight: 500;
-  --resume-caption-04-font-size: 14px;
-  --resume-caption-04-letter-spacing: 0px;
-  --resume-caption-04-line-height: 14px;
-  --resume-caption-04-font-style: normal;
-  --resume-caption-05-font-family: "Fira Sans", Helvetica;
-  --resume-caption-05-font-weight: 500;
-  --resume-caption-05-font-size: 12px;
-  --resume-caption-05-letter-spacing: 0px;
-  --resume-caption-05-line-height: 12px;
-  --resume-caption-05-font-style: normal;
-  --resume-caption-06-font-family: "Fira Sans", Helvetica;
-  --resume-caption-06-font-weight: 500;
-  --resume-caption-06-font-size: 10px;
-  --resume-caption-06-letter-spacing: 0px;
-  --resume-caption-06-line-height: 10px;
-  --resume-caption-06-font-style: normal;
-  --resume-body-XXL-400-font-family: "Fira Sans", Helvetica;
-  --resume-body-XXL-400-font-weight: 400;
-  --resume-body-XXL-400-font-size: 24px;
-  --resume-body-XXL-400-letter-spacing: 0px;
-  --resume-body-XXL-400-line-height: 32px;
-  --resume-body-XXL-400-font-style: normal;
-  --resume-body-XXL-500-font-family: "Fira Sans", Helvetica;
-  --resume-body-XXL-500-font-weight: 500;
-  --resume-body-XXL-500-font-size: 24px;
-  --resume-body-XXL-500-letter-spacing: 0px;
-  --resume-body-XXL-500-line-height: 32px;
-  --resume-body-XXL-500-font-style: normal;
-  --resume-body-XXL-600-font-family: "Fira Sans", Helvetica;
-  --resume-body-XXL-600-font-weight: 600;
-  --resume-body-XXL-600-font-size: 24px;
-  --resume-body-XXL-600-letter-spacing: 0px;
-  --resume-body-XXL-600-line-height: 32px;
-  --resume-body-XXL-600-font-style: normal;
-  --resume-body-XL-400-font-family: "Fira Sans", Helvetica;
-  --resume-body-XL-400-font-weight: 400;
-  --resume-body-XL-400-font-size: 20px;
-  --resume-body-XL-400-letter-spacing: 0px;
-  --resume-body-XL-400-line-height: 28px;
-  --resume-body-XL-400-font-style: normal;
-  --resume-body-XL-500-font-family: "Fira Sans", Helvetica;
-  --resume-body-XL-500-font-weight: 500;
-  --resume-body-XL-500-font-size: 20px;
-  --resume-body-XL-500-letter-spacing: 0px;
-  --resume-body-XL-500-line-height: 28px;
-  --resume-body-XL-500-font-style: normal;
-  --resume-body-XL-600-font-family: "Fira Sans", Helvetica;
-  --resume-body-XL-600-font-weight: 600;
-  --resume-body-XL-600-font-size: 20px;
-  --resume-body-XL-600-letter-spacing: 0px;
-  --resume-body-XL-600-line-height: 28px;
-  --resume-body-XL-600-font-style: normal;
-  --resume-body-large-400-font-family: "Fira Sans", Helvetica;
-  --resume-body-large-400-font-weight: 400;
-  --resume-body-large-400-font-size: 18px;
-  --resume-body-large-400-letter-spacing: 0px;
-  --resume-body-large-400-line-height: 24px;
-  --resume-body-large-400-font-style: normal;
-  --resume-body-large-500-font-family: "Fira Sans", Helvetica;
-  --resume-body-large-500-font-weight: 500;
-  --resume-body-large-500-font-size: 18px;
-  --resume-body-large-500-letter-spacing: 0px;
-  --resume-body-large-500-line-height: 24px;
-  --resume-body-large-500-font-style: normal;
-  --resume-body-large-600-font-family: "Fira Sans", Helvetica;
-  --resume-body-large-600-font-weight: 600;
-  --resume-body-large-600-font-size: 18px;
-  --resume-body-large-600-letter-spacing: 0px;
-  --resume-body-large-600-line-height: 24px;
-  --resume-body-large-600-font-style: normal;
-  --resume-body-regular-400-font-family: "Fira Sans", Helvetica;
-  --resume-body-regular-400-font-weight: 400;
-  --resume-body-regular-400-font-size: 16px;
-  --resume-body-regular-400-letter-spacing: 0px;
-  --resume-body-regular-400-line-height: 24px;
-  --resume-body-regular-400-font-style: normal;
-  --resume-body-regular-500-font-family: "Fira Sans", Helvetica;
-  --resume-body-regular-500-font-weight: 500;
-  --resume-body-regular-500-font-size: 16px;
-  --resume-body-regular-500-letter-spacing: 0px;
-  --resume-body-regular-500-line-height: 24px;
-  --resume-body-regular-500-font-style: normal;
-  --resume-body-regular-600-font-family: "Fira Sans", Helvetica;
-  --resume-body-regular-600-font-weight: 600;
-  --resume-body-regular-600-font-size: 16px;
-  --resume-body-regular-600-letter-spacing: 0px;
-  --resume-body-regular-600-line-height: 24px;
-  --resume-body-regular-600-font-style: normal;
-  --resume-body-small-400-font-family: "Fira Sans", Helvetica;
-  --resume-body-small-400-font-weight: 400;
-  --resume-body-small-400-font-size: 14px;
-  --resume-body-small-400-letter-spacing: 0px;
-  --resume-body-small-400-line-height: 20px;
-  --resume-body-small-400-font-style: normal;
-  --resume-body-small-500-font-family: "Fira Sans", Helvetica;
-  --resume-body-small-500-font-weight: 500;
-  --resume-body-small-500-font-size: 14px;
-  --resume-body-small-500-letter-spacing: 0px;
-  --resume-body-small-500-line-height: 20px;
-  --resume-body-small-500-font-style: normal;
-  --resume-body-small-600-font-family: "Fira Sans", Helvetica;
-  --resume-body-small-600-font-weight: 600;
-  --resume-body-small-600-font-size: 14px;
-  --resume-body-small-600-letter-spacing: 0px;
-  --resume-body-small-600-line-height: 20px;
-  --resume-body-small-600-font-style: normal;
-  --resume-body-XS-400-font-family: "Fira Sans", Helvetica;
-  --resume-body-XS-400-font-weight: 400;
-  --resume-body-XS-400-font-size: 12px;
-  --resume-body-XS-400-letter-spacing: 0px;
-  --resume-body-XS-400-line-height: 16px;
-  --resume-body-XS-400-font-style: normal;
-  --resume-body-XS-500-font-family: "Fira Sans", Helvetica;
-  --resume-body-XS-500-font-weight: 500;
-  --resume-body-XS-500-font-size: 12px;
-  --resume-body-XS-500-letter-spacing: 0px;
-  --resume-body-XS-500-line-height: 16px;
-  --resume-body-XS-500-font-style: normal;
-  --resume-body-XS-600-font-family: "Fira Sans", Helvetica;
-  --resume-body-XS-600-font-weight: 600;
-  --resume-body-XS-600-font-size: 12px;
-  --resume-body-XS-600-letter-spacing: 0px;
-  --resume-body-XS-600-line-height: 16px;
-  --resume-body-XS-600-font-style: normal;
-  --lawyer-display-01-400-font-family: "Barlow", Helvetica;
-  --lawyer-display-01-400-font-weight: 400;
-  --lawyer-display-01-400-font-size: 54px;
-  --lawyer-display-01-400-letter-spacing: 0px;
-  --lawyer-display-01-400-line-height: 62px;
-  --lawyer-display-01-400-font-style: normal;
-  --lawyer-display-01-600-font-family: "Barlow", Helvetica;
-  --lawyer-display-01-600-font-weight: 600;
-  --lawyer-display-01-600-font-size: 54px;
-  --lawyer-display-01-600-letter-spacing: 0px;
-  --lawyer-display-01-600-line-height: 62px;
-  --lawyer-display-01-600-font-style: normal;
-  --lawyer-heading-01-400-font-family: "Barlow", Helvetica;
-  --lawyer-heading-01-400-font-weight: 400;
-  --lawyer-heading-01-400-font-size: 48px;
-  --lawyer-heading-01-400-letter-spacing: 0px;
-  --lawyer-heading-01-400-line-height: 56px;
-  --lawyer-heading-01-400-font-style: normal;
-  --lawyer-heading-01-600-font-family: "Barlow", Helvetica;
-  --lawyer-heading-01-600-font-weight: 600;
-  --lawyer-heading-01-600-font-size: 48px;
-  --lawyer-heading-01-600-letter-spacing: 0px;
-  --lawyer-heading-01-600-line-height: 56px;
-  --lawyer-heading-01-600-font-style: normal;
-  --lawyer-heading-02-400-font-family: "Barlow", Helvetica;
-  --lawyer-heading-02-400-font-weight: 400;
-  --lawyer-heading-02-400-font-size: 40px;
-  --lawyer-heading-02-400-letter-spacing: 0px;
-  --lawyer-heading-02-400-line-height: 48px;
-  --lawyer-heading-02-400-font-style: normal;
-  --lawyer-heading-02-600-font-family: "Barlow", Helvetica;
-  --lawyer-heading-02-600-font-weight: 600;
-  --lawyer-heading-02-600-font-size: 40px;
-  --lawyer-heading-02-600-letter-spacing: 0px;
-  --lawyer-heading-02-600-line-height: 48px;
-  --lawyer-heading-02-600-font-style: normal;
-  --lawyer-heading-03-400-font-family: "Barlow", Helvetica;
-  --lawyer-heading-03-400-font-weight: 400;
-  --lawyer-heading-03-400-font-size: 36px;
-  --lawyer-heading-03-400-letter-spacing: 0px;
-  --lawyer-heading-03-400-line-height: 44px;
-  --lawyer-heading-03-400-font-style: normal;
-  --lawyer-heading-03-600-font-family: "Barlow", Helvetica;
-  --lawyer-heading-03-600-font-weight: 600;
-  --lawyer-heading-03-600-font-size: 36px;
-  --lawyer-heading-03-600-letter-spacing: 0px;
-  --lawyer-heading-03-600-line-height: 44px;
-  --lawyer-heading-03-600-font-style: normal;
-  --lawyer-heading-04-400-font-family: "Barlow", Helvetica;
-  --lawyer-heading-04-400-font-weight: 400;
-  --lawyer-heading-04-400-font-size: 32px;
-  --lawyer-heading-04-400-letter-spacing: 0px;
-  --lawyer-heading-04-400-line-height: 40px;
-  --lawyer-heading-04-400-font-style: normal;
-  --lawyer-heading-04-600-font-family: "Barlow", Helvetica;
-  --lawyer-heading-04-600-font-weight: 600;
-  --lawyer-heading-04-600-font-size: 32px;
-  --lawyer-heading-04-600-letter-spacing: 0px;
-  --lawyer-heading-04-600-line-height: 40px;
-  --lawyer-heading-04-600-font-style: normal;
-  --lawyer-heading-05-400-font-family: "Barlow", Helvetica;
-  --lawyer-heading-05-400-font-weight: 400;
-  --lawyer-heading-05-400-font-size: 24px;
-  --lawyer-heading-05-400-letter-spacing: 0px;
-  --lawyer-heading-05-400-line-height: 32px;
-  --lawyer-heading-05-400-font-style: normal;
-  --lawyer-heading-05-600-font-family: "Barlow", Helvetica;
-  --lawyer-heading-05-600-font-weight: 600;
-  --lawyer-heading-05-600-font-size: 24px;
-  --lawyer-heading-05-600-letter-spacing: 0px;
-  --lawyer-heading-05-600-line-height: 32px;
-  --lawyer-heading-05-600-font-style: normal;
-  --lawyer-button-s-font-family: "Barlow", Helvetica;
-  --lawyer-button-s-font-weight: 600;
-  --lawyer-button-s-font-size: 14px;
-  --lawyer-button-s-letter-spacing: 0px;
-  --lawyer-button-s-line-height: 48px;
-  --lawyer-button-s-font-style: normal;
-  --lawyer-button-m-font-family: "Barlow", Helvetica;
-  --lawyer-button-m-font-weight: 600;
-  --lawyer-button-m-font-size: 16px;
-  --lawyer-button-m-letter-spacing: 0px;
-  --lawyer-button-m-line-height: 56px;
-  --lawyer-button-m-font-style: normal;
-  --lawyer-caption-01-font-family: "Barlow", Helvetica;
-  --lawyer-caption-01-font-weight: 500;
-  --lawyer-caption-01-font-size: 20px;
-  --lawyer-caption-01-letter-spacing: 0px;
-  --lawyer-caption-01-line-height: 20px;
-  --lawyer-caption-01-font-style: normal;
-  --lawyer-caption-02-font-family: "Barlow", Helvetica;
-  --lawyer-caption-02-font-weight: 500;
-  --lawyer-caption-02-font-size: 18px;
-  --lawyer-caption-02-letter-spacing: 0px;
-  --lawyer-caption-02-line-height: 18px;
-  --lawyer-caption-02-font-style: normal;
-  --lawyer-caption-03-font-family: "Barlow", Helvetica;
-  --lawyer-caption-03-font-weight: 500;
-  --lawyer-caption-03-font-size: 16px;
-  --lawyer-caption-03-letter-spacing: 0px;
-  --lawyer-caption-03-line-height: 16px;
-  --lawyer-caption-03-font-style: normal;
-  --lawyer-caption-04-font-family: "Barlow", Helvetica;
-  --lawyer-caption-04-font-weight: 500;
-  --lawyer-caption-04-font-size: 14px;
-  --lawyer-caption-04-letter-spacing: 0px;
-  --lawyer-caption-04-line-height: 14px;
-  --lawyer-caption-04-font-style: normal;
-  --lawyer-caption-05-font-family: "Barlow", Helvetica;
-  --lawyer-caption-05-font-weight: 500;
-  --lawyer-caption-05-font-size: 12px;
-  --lawyer-caption-05-letter-spacing: 0px;
-  --lawyer-caption-05-line-height: 12px;
-  --lawyer-caption-05-font-style: normal;
-  --lawyer-caption-06-font-family: "Barlow", Helvetica;
-  --lawyer-caption-06-font-weight: 500;
-  --lawyer-caption-06-font-size: 10px;
-  --lawyer-caption-06-letter-spacing: 0px;
-  --lawyer-caption-06-line-height: 10px;
-  --lawyer-caption-06-font-style: normal;
-  --lawyer-body-XXL-600-font-family: "Barlow", Helvetica;
-  --lawyer-body-XXL-600-font-weight: 600;
-  --lawyer-body-XXL-600-font-size: 24px;
-  --lawyer-body-XXL-600-letter-spacing: 0px;
-  --lawyer-body-XXL-600-line-height: 32px;
-  --lawyer-body-XXL-600-font-style: normal;
-  --lawyer-body-XXL-400-font-family: "Barlow", Helvetica;
-  --lawyer-body-XXL-400-font-weight: 400;
-  --lawyer-body-XXL-400-font-size: 24px;
-  --lawyer-body-XXL-400-letter-spacing: 0px;
-  --lawyer-body-XXL-400-line-height: 32px;
-  --lawyer-body-XXL-400-font-style: normal;
-  --lawyer-body-XXL-500-font-family: "Barlow", Helvetica;
-  --lawyer-body-XXL-500-font-weight: 500;
-  --lawyer-body-XXL-500-font-size: 24px;
-  --lawyer-body-XXL-500-letter-spacing: 0px;
-  --lawyer-body-XXL-500-line-height: 32px;
-  --lawyer-body-XXL-500-font-style: normal;
-  --lawyer-body-XL-600-font-family: "Barlow", Helvetica;
-  --lawyer-body-XL-600-font-weight: 600;
-  --lawyer-body-XL-600-font-size: 20px;
-  --lawyer-body-XL-600-letter-spacing: 0px;
-  --lawyer-body-XL-600-line-height: 28px;
-  --lawyer-body-XL-600-font-style: normal;
-  --lawyer-body-XL-400-font-family: "Barlow", Helvetica;
-  --lawyer-body-XL-400-font-weight: 400;
-  --lawyer-body-XL-400-font-size: 20px;
-  --lawyer-body-XL-400-letter-spacing: 0px;
-  --lawyer-body-XL-400-line-height: 28px;
-  --lawyer-body-XL-400-font-style: normal;
-  --lawyer-body-XL-500-font-family: "Barlow", Helvetica;
-  --lawyer-body-XL-500-font-weight: 500;
-  --lawyer-body-XL-500-font-size: 20px;
-  --lawyer-body-XL-500-letter-spacing: 0px;
-  --lawyer-body-XL-500-line-height: 28px;
-  --lawyer-body-XL-500-font-style: normal;
-  --lawyer-body-large-400-font-family: "Barlow", Helvetica;
-  --lawyer-body-large-400-font-weight: 400;
-  --lawyer-body-large-400-font-size: 18px;
-  --lawyer-body-large-400-letter-spacing: 0px;
-  --lawyer-body-large-400-line-height: 24px;
-  --lawyer-body-large-400-font-style: normal;
-  --lawyer-body-large-500-font-family: "Barlow", Helvetica;
-  --lawyer-body-large-500-font-weight: 500;
-  --lawyer-body-large-500-font-size: 18px;
-  --lawyer-body-large-500-letter-spacing: 0px;
-  --lawyer-body-large-500-line-height: 24px;
-  --lawyer-body-large-500-font-style: normal;
-  --lawyer-body-large-600-font-family: "Barlow", Helvetica;
-  --lawyer-body-large-600-font-weight: 600;
-  --lawyer-body-large-600-font-size: 18px;
-  --lawyer-body-large-600-letter-spacing: 0px;
-  --lawyer-body-large-600-line-height: 24px;
-  --lawyer-body-large-600-font-style: normal;
-  --lawyer-body-regular-400-font-family: "Barlow", Helvetica;
-  --lawyer-body-regular-400-font-weight: 400;
-  --lawyer-body-regular-400-font-size: 16px;
-  --lawyer-body-regular-400-letter-spacing: 0px;
-  --lawyer-body-regular-400-line-height: 24px;
-  --lawyer-body-regular-400-font-style: normal;
-  --lawyer-body-regular-500-font-family: "Barlow", Helvetica;
-  --lawyer-body-regular-500-font-weight: 500;
-  --lawyer-body-regular-500-font-size: 16px;
-  --lawyer-body-regular-500-letter-spacing: 0px;
-  --lawyer-body-regular-500-line-height: 24px;
-  --lawyer-body-regular-500-font-style: normal;
-  --lawyer-body-regular-600-font-family: "Barlow", Helvetica;
-  --lawyer-body-regular-600-font-weight: 600;
-  --lawyer-body-regular-600-font-size: 16px;
-  --lawyer-body-regular-600-letter-spacing: 0px;
-  --lawyer-body-regular-600-line-height: 24px;
-  --lawyer-body-regular-600-font-style: normal;
-  --lawyer-body-small-400-font-family: "Barlow", Helvetica;
-  --lawyer-body-small-400-font-weight: 400;
-  --lawyer-body-small-400-font-size: 14px;
-  --lawyer-body-small-400-letter-spacing: 0px;
-  --lawyer-body-small-400-line-height: 20px;
-  --lawyer-body-small-400-font-style: normal;
-  --lawyer-body-small-500-font-family: "Barlow", Helvetica;
-  --lawyer-body-small-500-font-weight: 500;
-  --lawyer-body-small-500-font-size: 14px;
-  --lawyer-body-small-500-letter-spacing: 0px;
-  --lawyer-body-small-500-line-height: 20px;
-  --lawyer-body-small-500-font-style: normal;
-  --lawyer-body-small-600-font-family: "Barlow", Helvetica;
-  --lawyer-body-small-600-font-weight: 600;
-  --lawyer-body-small-600-font-size: 14px;
-  --lawyer-body-small-600-letter-spacing: 0px;
-  --lawyer-body-small-600-line-height: 20px;
-  --lawyer-body-small-600-font-style: normal;
-  --lawyer-body-XS-600-font-family: "Barlow", Helvetica;
-  --lawyer-body-XS-600-font-weight: 600;
-  --lawyer-body-XS-600-font-size: 12px;
-  --lawyer-body-XS-600-letter-spacing: 0px;
-  --lawyer-body-XS-600-line-height: 16px;
-  --lawyer-body-XS-600-font-style: normal;
-  --lawyer-body-XS-400-font-family: "Barlow", Helvetica;
-  --lawyer-body-XS-400-font-weight: 400;
-  --lawyer-body-XS-400-font-size: 12px;
-  --lawyer-body-XS-400-letter-spacing: 0px;
-  --lawyer-body-XS-400-line-height: 16px;
-  --lawyer-body-XS-400-font-style: normal;
-  --lawyer-body-XS-500-font-family: "Barlow", Helvetica;
-  --lawyer-body-XS-500-font-weight: 500;
-  --lawyer-body-XS-500-font-size: 12px;
-  --lawyer-body-XS-500-letter-spacing: 0px;
-  --lawyer-body-XS-500-line-height: 16px;
-  --lawyer-body-XS-500-font-style: normal;
-  --mono-display-01-400-font-family: "JetBrains Mono", Helvetica;
-  --mono-display-01-400-font-weight: 400;
-  --mono-display-01-400-font-size: 60px;
-  --mono-display-01-400-letter-spacing: 0px;
-  --mono-display-01-400-line-height: 60px;
-  --mono-display-01-400-font-style: normal;
-  --mono-display-01-700-font-family: "JetBrains Mono", Helvetica;
-  --mono-display-01-700-font-weight: 700;
-  --mono-display-01-700-font-size: 60px;
-  --mono-display-01-700-letter-spacing: 0px;
-  --mono-display-01-700-line-height: 60px;
-  --mono-display-01-700-font-style: normal;
-  --mono-heading-01-400-font-family: "JetBrains Mono", Helvetica;
-  --mono-heading-01-400-font-weight: 400;
-  --mono-heading-01-400-font-size: 48px;
-  --mono-heading-01-400-letter-spacing: 0px;
-  --mono-heading-01-400-line-height: 56px;
-  --mono-heading-01-400-font-style: normal;
-  --mono-heading-01-700-font-family: "JetBrains Mono", Helvetica;
-  --mono-heading-01-700-font-weight: 700;
-  --mono-heading-01-700-font-size: 48px;
-  --mono-heading-01-700-letter-spacing: 0px;
-  --mono-heading-01-700-line-height: 56px;
-  --mono-heading-01-700-font-style: normal;
-  --mono-heading-02-400-font-family: "JetBrains Mono", Helvetica;
-  --mono-heading-02-400-font-weight: 400;
-  --mono-heading-02-400-font-size: 40px;
-  --mono-heading-02-400-letter-spacing: 0px;
-  --mono-heading-02-400-line-height: 48px;
-  --mono-heading-02-400-font-style: normal;
-  --mono-heading-02-700-font-family: "JetBrains Mono", Helvetica;
-  --mono-heading-02-700-font-weight: 700;
-  --mono-heading-02-700-font-size: 40px;
-  --mono-heading-02-700-letter-spacing: 0px;
-  --mono-heading-02-700-line-height: 48px;
-  --mono-heading-02-700-font-style: normal;
-  --mono-heading-03-400-font-family: "JetBrains Mono", Helvetica;
-  --mono-heading-03-400-font-weight: 400;
-  --mono-heading-03-400-font-size: 36px;
-  --mono-heading-03-400-letter-spacing: 0px;
-  --mono-heading-03-400-line-height: 44px;
-  --mono-heading-03-400-font-style: normal;
-  --mono-heading-03-700-font-family: "JetBrains Mono", Helvetica;
-  --mono-heading-03-700-font-weight: 700;
-  --mono-heading-03-700-font-size: 36px;
-  --mono-heading-03-700-letter-spacing: 0px;
-  --mono-heading-03-700-line-height: 44px;
-  --mono-heading-03-700-font-style: normal;
-  --mono-heading-04-400-font-family: "JetBrains Mono", Helvetica;
-  --mono-heading-04-400-font-weight: 400;
-  --mono-heading-04-400-font-size: 32px;
-  --mono-heading-04-400-letter-spacing: 0px;
-  --mono-heading-04-400-line-height: 40px;
-  --mono-heading-04-400-font-style: normal;
-  --mono-heading-04-700-font-family: "JetBrains Mono", Helvetica;
-  --mono-heading-04-700-font-weight: 700;
-  --mono-heading-04-700-font-size: 32px;
-  --mono-heading-04-700-letter-spacing: 0px;
-  --mono-heading-04-700-line-height: 40px;
-  --mono-heading-04-700-font-style: normal;
-  --mono-heading-05-400-font-family: "JetBrains Mono", Helvetica;
-  --mono-heading-05-400-font-weight: 400;
-  --mono-heading-05-400-font-size: 24px;
-  --mono-heading-05-400-letter-spacing: 0px;
-  --mono-heading-05-400-line-height: 32px;
-  --mono-heading-05-400-font-style: normal;
-  --mono-heading-05-700-font-family: "JetBrains Mono", Helvetica;
-  --mono-heading-05-700-font-weight: 700;
-  --mono-heading-05-700-font-size: 24px;
-  --mono-heading-05-700-letter-spacing: 0px;
-  --mono-heading-05-700-line-height: 32px;
-  --mono-heading-05-700-font-style: normal;
-  --mono-heading-06-400-font-family: "JetBrains Mono", Helvetica;
-  --mono-heading-06-400-font-weight: 400;
-  --mono-heading-06-400-font-size: 16px;
-  --mono-heading-06-400-letter-spacing: 0px;
-  --mono-heading-06-400-line-height: 56px;
-  --mono-heading-06-400-font-style: normal;
-  --mono-heading-06-500-font-family: "JetBrains Mono", Helvetica;
-  --mono-heading-06-500-font-weight: 700;
-  --mono-heading-06-500-font-size: 14px;
-  --mono-heading-06-500-letter-spacing: 0px;
-  --mono-heading-06-500-line-height: 48px;
-  --mono-heading-06-500-font-style: normal;
-  --mono-caption-01-font-family: "JetBrains Mono", Helvetica;
-  --mono-caption-01-font-weight: 500;
-  --mono-caption-01-font-size: 20px;
-  --mono-caption-01-letter-spacing: 0px;
-  --mono-caption-01-line-height: 20px;
-  --mono-caption-01-font-style: normal;
-  --mono-caption-02-font-family: "JetBrains Mono", Helvetica;
-  --mono-caption-02-font-weight: 500;
-  --mono-caption-02-font-size: 18px;
-  --mono-caption-02-letter-spacing: 0px;
-  --mono-caption-02-line-height: 18px;
-  --mono-caption-02-font-style: normal;
-  --mono-caption-03-font-family: "JetBrains Mono", Helvetica;
-  --mono-caption-03-font-weight: 500;
-  --mono-caption-03-font-size: 16px;
-  --mono-caption-03-letter-spacing: 0px;
-  --mono-caption-03-line-height: 16px;
-  --mono-caption-03-font-style: normal;
-  --mono-caption-04-font-family: "JetBrains Mono", Helvetica;
-  --mono-caption-04-font-weight: 500;
-  --mono-caption-04-font-size: 14px;
-  --mono-caption-04-letter-spacing: 0px;
-  --mono-caption-04-line-height: 14px;
-  --mono-caption-04-font-style: normal;
-  --mono-caption-05-font-family: "JetBrains Mono", Helvetica;
-  --mono-caption-05-font-weight: 500;
-  --mono-caption-05-font-size: 12px;
-  --mono-caption-05-letter-spacing: 0px;
-  --mono-caption-05-line-height: 12px;
-  --mono-caption-05-font-style: normal;
-  --mono-caption-06-font-family: "JetBrains Mono", Helvetica;
-  --mono-caption-06-font-weight: 500;
-  --mono-caption-06-font-size: 10px;
-  --mono-caption-06-letter-spacing: 0px;
-  --mono-caption-06-line-height: 10px;
-  --mono-caption-06-font-style: normal;
-  --mono-body-XXL-400-font-family: "JetBrains Mono", Helvetica;
-  --mono-body-XXL-400-font-weight: 400;
-  --mono-body-XXL-400-font-size: 24px;
-  --mono-body-XXL-400-letter-spacing: 0px;
-  --mono-body-XXL-400-line-height: 32px;
-  --mono-body-XXL-400-font-style: normal;
-  --mono-body-XXL-500-font-family: "JetBrains Mono", Helvetica;
-  --mono-body-XXL-500-font-weight: 500;
-  --mono-body-XXL-500-font-size: 24px;
-  --mono-body-XXL-500-letter-spacing: 0px;
-  --mono-body-XXL-500-line-height: 32px;
-  --mono-body-XXL-500-font-style: normal;
-  --mono-body-XXL-600-font-family: "JetBrains Mono", Helvetica;
-  --mono-body-XXL-600-font-weight: 600;
-  --mono-body-XXL-600-font-size: 24px;
-  --mono-body-XXL-600-letter-spacing: 0px;
-  --mono-body-XXL-600-line-height: 32px;
-  --mono-body-XXL-600-font-style: normal;
-  --mono-body-XL-400-font-family: "JetBrains Mono", Helvetica;
-  --mono-body-XL-400-font-weight: 400;
-  --mono-body-XL-400-font-size: 20px;
-  --mono-body-XL-400-letter-spacing: 0px;
-  --mono-body-XL-400-line-height: 28px;
-  --mono-body-XL-400-font-style: normal;
-  --mono-body-XL-500-font-family: "JetBrains Mono", Helvetica;
-  --mono-body-XL-500-font-weight: 500;
-  --mono-body-XL-500-font-size: 20px;
-  --mono-body-XL-500-letter-spacing: 0px;
-  --mono-body-XL-500-line-height: 28px;
-  --mono-body-XL-500-font-style: normal;
-  --mono-body-XL-600-font-family: "JetBrains Mono", Helvetica;
-  --mono-body-XL-600-font-weight: 600;
-  --mono-body-XL-600-font-size: 20px;
-  --mono-body-XL-600-letter-spacing: 0px;
-  --mono-body-XL-600-line-height: 28px;
-  --mono-body-XL-600-font-style: normal;
-  --mono-body-large-400-font-family: "JetBrains Mono", Helvetica;
-  --mono-body-large-400-font-weight: 400;
-  --mono-body-large-400-font-size: 18px;
-  --mono-body-large-400-letter-spacing: 0px;
-  --mono-body-large-400-line-height: 24px;
-  --mono-body-large-400-font-style: normal;
-  --mono-body-large-500-font-family: "JetBrains Mono", Helvetica;
-  --mono-body-large-500-font-weight: 500;
-  --mono-body-large-500-font-size: 18px;
-  --mono-body-large-500-letter-spacing: 0px;
-  --mono-body-large-500-line-height: 24px;
-  --mono-body-large-500-font-style: normal;
-  --mono-body-large-600-font-family: "JetBrains Mono", Helvetica;
-  --mono-body-large-600-font-weight: 600;
-  --mono-body-large-600-font-size: 18px;
-  --mono-body-large-600-letter-spacing: 0px;
-  --mono-body-large-600-line-height: 24px;
-  --mono-body-large-600-font-style: normal;
-  --mono-body-regular-400-font-family: "JetBrains Mono", Helvetica;
-  --mono-body-regular-400-font-weight: 400;
-  --mono-body-regular-400-font-size: 16px;
-  --mono-body-regular-400-letter-spacing: 0px;
-  --mono-body-regular-400-line-height: 24px;
-  --mono-body-regular-400-font-style: normal;
-  --mono-body-regular-500-font-family: "JetBrains Mono", Helvetica;
-  --mono-body-regular-500-font-weight: 500;
-  --mono-body-regular-500-font-size: 16px;
-  --mono-body-regular-500-letter-spacing: 0px;
-  --mono-body-regular-500-line-height: 24px;
-  --mono-body-regular-500-font-style: normal;
-  --mono-body-regular-600-font-family: "JetBrains Mono", Helvetica;
-  --mono-body-regular-600-font-weight: 600;
-  --mono-body-regular-600-font-size: 16px;
-  --mono-body-regular-600-letter-spacing: 0px;
-  --mono-body-regular-600-line-height: 24px;
-  --mono-body-regular-600-font-style: normal;
-  --mono-body-small-400-font-family: "JetBrains Mono", Helvetica;
-  --mono-body-small-400-font-weight: 400;
-  --mono-body-small-400-font-size: 14px;
-  --mono-body-small-400-letter-spacing: 0px;
-  --mono-body-small-400-line-height: 20px;
-  --mono-body-small-400-font-style: normal;
-  --mono-body-small-500-font-family: "JetBrains Mono", Helvetica;
-  --mono-body-small-500-font-weight: 500;
-  --mono-body-small-500-font-size: 14px;
-  --mono-body-small-500-letter-spacing: 0px;
-  --mono-body-small-500-line-height: 20px;
-  --mono-body-small-500-font-style: normal;
-  --mono-body-small-600-font-family: "JetBrains Mono", Helvetica;
-  --mono-body-small-600-font-weight: 600;
-  --mono-body-small-600-font-size: 14px;
-  --mono-body-small-600-letter-spacing: 0px;
-  --mono-body-small-600-line-height: 20px;
-  --mono-body-small-600-font-style: normal;
-  --mono-body-XS-400-font-family: "JetBrains Mono", Helvetica;
-  --mono-body-XS-400-font-weight: 400;
-  --mono-body-XS-400-font-size: 12px;
-  --mono-body-XS-400-letter-spacing: 0px;
-  --mono-body-XS-400-line-height: 16px;
-  --mono-body-XS-400-font-style: normal;
-  --mono-body-XS-500-font-family: "JetBrains Mono", Helvetica;
-  --mono-body-XS-500-font-weight: 500;
-  --mono-body-XS-500-font-size: 12px;
-  --mono-body-XS-500-letter-spacing: 0px;
-  --mono-body-XS-500-line-height: 16px;
-  --mono-body-XS-500-font-style: normal;
-  --mono-body-XS-600-font-family: "JetBrains Mono", Helvetica;
-  --mono-body-XS-600-font-weight: 600;
-  --mono-body-XS-600-font-size: 12px;
-  --mono-body-XS-600-letter-spacing: 0px;
-  --mono-body-XS-600-line-height: 16px;
-  --mono-body-XS-600-font-style: normal;
-  --freelancer-display-01-400-font-family: "Cardo", Helvetica;
-  --freelancer-display-01-400-font-weight: 400;
-  --freelancer-display-01-400-font-size: 72px;
-  --freelancer-display-01-400-letter-spacing: 0px;
-  --freelancer-display-01-400-line-height: 80px;
-  --freelancer-display-01-400-font-style: normal;
-  --freelancer-display-01-700-font-family: "Cardo", Helvetica;
-  --freelancer-display-01-700-font-weight: 700;
-  --freelancer-display-01-700-font-size: 72px;
-  --freelancer-display-01-700-letter-spacing: 0px;
-  --freelancer-display-01-700-line-height: 80px;
-  --freelancer-display-01-700-font-style: normal;
-  --freelancer-heading-01-400-font-family: "Cardo", Helvetica;
-  --freelancer-heading-01-400-font-weight: 400;
-  --freelancer-heading-01-400-font-size: 56px;
-  --freelancer-heading-01-400-letter-spacing: 0px;
-  --freelancer-heading-01-400-line-height: 64px;
-  --freelancer-heading-01-400-font-style: normal;
-  --freelancer-heading-01-700-font-family: "Cardo", Helvetica;
-  --freelancer-heading-01-700-font-weight: 700;
-  --freelancer-heading-01-700-font-size: 56px;
-  --freelancer-heading-01-700-letter-spacing: 0px;
-  --freelancer-heading-01-700-line-height: 64px;
-  --freelancer-heading-01-700-font-style: normal;
-  --freelancer-heading-02-400-font-family: "Cardo", Helvetica;
-  --freelancer-heading-02-400-font-weight: 400;
-  --freelancer-heading-02-400-font-size: 48px;
-  --freelancer-heading-02-400-letter-spacing: 0px;
-  --freelancer-heading-02-400-line-height: 56px;
-  --freelancer-heading-02-400-font-style: normal;
-  --freelancer-heading-02-700-font-family: "Cardo", Helvetica;
-  --freelancer-heading-02-700-font-weight: 700;
-  --freelancer-heading-02-700-font-size: 48px;
-  --freelancer-heading-02-700-letter-spacing: 0px;
-  --freelancer-heading-02-700-line-height: 56px;
-  --freelancer-heading-02-700-font-style: normal;
-  --freelancer-heading-03-400-font-family: "Cardo", Helvetica;
-  --freelancer-heading-03-400-font-weight: 400;
-  --freelancer-heading-03-400-font-size: 40px;
-  --freelancer-heading-03-400-letter-spacing: 0px;
-  --freelancer-heading-03-400-line-height: 48px;
-  --freelancer-heading-03-400-font-style: normal;
-  --freelancer-heading-03-700-font-family: "Cardo", Helvetica;
-  --freelancer-heading-03-700-font-weight: 700;
-  --freelancer-heading-03-700-font-size: 40px;
-  --freelancer-heading-03-700-letter-spacing: 0px;
-  --freelancer-heading-03-700-line-height: 48px;
-  --freelancer-heading-03-700-font-style: normal;
-  --freelancer-heading-04-400-font-family: "Cardo", Helvetica;
-  --freelancer-heading-04-400-font-weight: 400;
-  --freelancer-heading-04-400-font-size: 36px;
-  --freelancer-heading-04-400-letter-spacing: 0px;
-  --freelancer-heading-04-400-line-height: 44px;
-  --freelancer-heading-04-400-font-style: normal;
-  --freelancer-heading-04-700-font-family: "Cardo", Helvetica;
-  --freelancer-heading-04-700-font-weight: 700;
-  --freelancer-heading-04-700-font-size: 36px;
-  --freelancer-heading-04-700-letter-spacing: 0px;
-  --freelancer-heading-04-700-line-height: 44px;
-  --freelancer-heading-04-700-font-style: normal;
-  --freelancer-heading-05-400-font-family: "Cardo", Helvetica;
-  --freelancer-heading-05-400-font-weight: 400;
-  --freelancer-heading-05-400-font-size: 32px;
-  --freelancer-heading-05-400-letter-spacing: 0px;
-  --freelancer-heading-05-400-line-height: 40px;
-  --freelancer-heading-05-400-font-style: normal;
-  --freelancer-heading-05-700-font-family: "Cardo", Helvetica;
-  --freelancer-heading-05-700-font-weight: 700;
-  --freelancer-heading-05-700-font-size: 32px;
-  --freelancer-heading-05-700-letter-spacing: 0px;
-  --freelancer-heading-05-700-line-height: 40px;
-  --freelancer-heading-05-700-font-style: normal;
-  --freelancer-heading-06-400-font-family: "Cardo", Helvetica;
-  --freelancer-heading-06-400-font-weight: 400;
-  --freelancer-heading-06-400-font-size: 24px;
-  --freelancer-heading-06-400-letter-spacing: 0px;
-  --freelancer-heading-06-400-line-height: 32px;
-  --freelancer-heading-06-400-font-style: normal;
-  --freelancer-heading-06-700-font-family: "Cardo", Helvetica;
-  --freelancer-heading-06-700-font-weight: 700;
-  --freelancer-heading-06-700-font-size: 24px;
-  --freelancer-heading-06-700-letter-spacing: 0px;
-  --freelancer-heading-06-700-line-height: 32px;
-  --freelancer-heading-06-700-font-style: normal;
-  --freelancer-caption-01-font-family: "Cardo", Helvetica;
-  --freelancer-caption-01-font-weight: 700;
-  --freelancer-caption-01-font-size: 20px;
-  --freelancer-caption-01-letter-spacing: 0px;
-  --freelancer-caption-01-line-height: 20px;
-  --freelancer-caption-01-font-style: normal;
-  --freelancer-caption-02-font-family: "Cardo", Helvetica;
-  --freelancer-caption-02-font-weight: 700;
-  --freelancer-caption-02-font-size: 18px;
-  --freelancer-caption-02-letter-spacing: 0px;
-  --freelancer-caption-02-line-height: 18px;
-  --freelancer-caption-02-font-style: normal;
-  --freelancer-caption-03-font-family: "Cardo", Helvetica;
-  --freelancer-caption-03-font-weight: 700;
-  --freelancer-caption-03-font-size: 16px;
-  --freelancer-caption-03-letter-spacing: 0px;
-  --freelancer-caption-03-line-height: 16px;
-  --freelancer-caption-03-font-style: normal;
-  --freelancer-caption-04-font-family: "Cardo", Helvetica;
-  --freelancer-caption-04-font-weight: 700;
-  --freelancer-caption-04-font-size: 14px;
-  --freelancer-caption-04-letter-spacing: 0px;
-  --freelancer-caption-04-line-height: 14px;
-  --freelancer-caption-04-font-style: normal;
-  --freelancer-caption-05-font-family: "Cardo", Helvetica;
-  --freelancer-caption-05-font-weight: 700;
-  --freelancer-caption-05-font-size: 12px;
-  --freelancer-caption-05-letter-spacing: 0px;
-  --freelancer-caption-05-line-height: 12px;
-  --freelancer-caption-05-font-style: normal;
-  --freelancer-caption-06-font-family: "Cardo", Helvetica;
-  --freelancer-caption-06-font-weight: 700;
-  --freelancer-caption-06-font-size: 10px;
-  --freelancer-caption-06-letter-spacing: 0px;
-  --freelancer-caption-06-line-height: 10px;
-  --freelancer-caption-06-font-style: normal;
-  --designer-display-01-font-family: "Sora", Helvetica;
-  --designer-display-01-font-weight: 600;
-  --designer-display-01-font-size: 64px;
-  --designer-display-01-letter-spacing: 0px;
-  --designer-display-01-line-height: 72px;
-  --designer-display-01-font-style: normal;
-  --designer-heading-01-font-family: "Sora", Helvetica;
-  --designer-heading-01-font-weight: 600;
-  --designer-heading-01-font-size: 48px;
-  --designer-heading-01-letter-spacing: 0px;
-  --designer-heading-01-line-height: 56px;
-  --designer-heading-01-font-style: normal;
-  --designer-heading-02-font-family: "Sora", Helvetica;
-  --designer-heading-02-font-weight: 600;
-  --designer-heading-02-font-size: 40px;
-  --designer-heading-02-letter-spacing: 0px;
-  --designer-heading-02-line-height: 48px;
-  --designer-heading-02-font-style: normal;
-  --designer-heading-03-font-family: "Sora", Helvetica;
-  --designer-heading-03-font-weight: 600;
-  --designer-heading-03-font-size: 36px;
-  --designer-heading-03-letter-spacing: 0px;
-  --designer-heading-03-line-height: 44px;
-  --designer-heading-03-font-style: normal;
-  --designer-heading-04-font-family: "Sora", Helvetica;
-  --designer-heading-04-font-weight: 600;
-  --designer-heading-04-font-size: 32px;
-  --designer-heading-04-letter-spacing: 0px;
-  --designer-heading-04-line-height: 40px;
-  --designer-heading-04-font-style: normal;
-  --designer-heading-05-font-family: "Sora", Helvetica;
-  --designer-heading-05-font-weight: 600;
-  --designer-heading-05-font-size: 24px;
-  --designer-heading-05-letter-spacing: 0px;
-  --designer-heading-05-line-height: 32px;
-  --designer-heading-05-font-style: normal;
-  --designer-button-medium-font-family: "Sora", Helvetica;
-  --designer-button-medium-font-weight: 600;
-  --designer-button-medium-font-size: 16px;
-  --designer-button-medium-letter-spacing: 0px;
-  --designer-button-medium-line-height: 72px;
-  --designer-button-medium-font-style: normal;
-  --designer-button-small-font-family: "Sora", Helvetica;
-  --designer-button-small-font-weight: 600;
-  --designer-button-small-font-size: 14px;
-  --designer-button-small-letter-spacing: 0px;
-  --designer-button-small-line-height: 56px;
-  --designer-button-small-font-style: normal;
-  --designer-caption-01-font-family: "Sora", Helvetica;
-  --designer-caption-01-font-weight: 400;
-  --designer-caption-01-font-size: 20px;
-  --designer-caption-01-letter-spacing: 0px;
-  --designer-caption-01-line-height: 20px;
-  --designer-caption-01-font-style: normal;
-  --designer-caption-02-font-family: "Sora", Helvetica;
-  --designer-caption-02-font-weight: 400;
-  --designer-caption-02-font-size: 18px;
-  --designer-caption-02-letter-spacing: 0px;
-  --designer-caption-02-line-height: 18px;
-  --designer-caption-02-font-style: normal;
-  --designer-caption-03-font-family: "Sora", Helvetica;
-  --designer-caption-03-font-weight: 400;
-  --designer-caption-03-font-size: 16px;
-  --designer-caption-03-letter-spacing: 0px;
-  --designer-caption-03-line-height: 16px;
-  --designer-caption-03-font-style: normal;
-  --designer-caption-04-font-family: "Sora", Helvetica;
-  --designer-caption-04-font-weight: 400;
-  --designer-caption-04-font-size: 14px;
-  --designer-caption-04-letter-spacing: 0px;
-  --designer-caption-04-line-height: 14px;
-  --designer-caption-04-font-style: normal;
-  --designer-caption-05-font-family: "Sora", Helvetica;
-  --designer-caption-05-font-weight: 400;
-  --designer-caption-05-font-size: 12px;
-  --designer-caption-05-letter-spacing: 0px;
-  --designer-caption-05-line-height: 12px;
-  --designer-caption-05-font-style: normal;
-  --designer-caption-06-font-family: "Sora", Helvetica;
-  --designer-caption-06-font-weight: 400;
-  --designer-caption-06-font-size: 10px;
-  --designer-caption-06-letter-spacing: 0px;
-  --designer-caption-06-line-height: 10px;
-  --designer-caption-06-font-style: normal;
-  --designer-body-XXL-300-font-family: "Sora", Helvetica;
-  --designer-body-XXL-300-font-weight: 300;
-  --designer-body-XXL-300-font-size: 24px;
-  --designer-body-XXL-300-letter-spacing: 0px;
-  --designer-body-XXL-300-line-height: 32px;
-  --designer-body-XXL-300-font-style: normal;
-  --designer-body-XXL-400-font-family: "Sora", Helvetica;
-  --designer-body-XXL-400-font-weight: 400;
-  --designer-body-XXL-400-font-size: 24px;
-  --designer-body-XXL-400-letter-spacing: 0px;
-  --designer-body-XXL-400-line-height: 32px;
-  --designer-body-XXL-400-font-style: normal;
-  --designer-body-XXL-600-font-family: "Sora", Helvetica;
-  --designer-body-XXL-600-font-weight: 600;
-  --designer-body-XXL-600-font-size: 24px;
-  --designer-body-XXL-600-letter-spacing: 0px;
-  --designer-body-XXL-600-line-height: 32px;
-  --designer-body-XXL-600-font-style: normal;
-  --designer-body-XL-300-font-family: "Sora", Helvetica;
-  --designer-body-XL-300-font-weight: 300;
-  --designer-body-XL-300-font-size: 20px;
-  --designer-body-XL-300-letter-spacing: 0px;
-  --designer-body-XL-300-line-height: 28px;
-  --designer-body-XL-300-font-style: normal;
-  --designer-body-XL-400-font-family: "Sora", Helvetica;
-  --designer-body-XL-400-font-weight: 400;
-  --designer-body-XL-400-font-size: 20px;
-  --designer-body-XL-400-letter-spacing: 0px;
-  --designer-body-XL-400-line-height: 28px;
-  --designer-body-XL-400-font-style: normal;
-  --designer-body-XL-600-font-family: "Sora", Helvetica;
-  --designer-body-XL-600-font-weight: 600;
-  --designer-body-XL-600-font-size: 20px;
-  --designer-body-XL-600-letter-spacing: 0px;
-  --designer-body-XL-600-line-height: 28px;
-  --designer-body-XL-600-font-style: normal;
-  --designer-body-large-300-font-family: "Sora", Helvetica;
-  --designer-body-large-300-font-weight: 300;
-  --designer-body-large-300-font-size: 18px;
-  --designer-body-large-300-letter-spacing: 0px;
-  --designer-body-large-300-line-height: 26px;
-  --designer-body-large-300-font-style: normal;
-  --designer-body-large-400-font-family: "Sora", Helvetica;
-  --designer-body-large-400-font-weight: 400;
-  --designer-body-large-400-font-size: 18px;
-  --designer-body-large-400-letter-spacing: 0px;
-  --designer-body-large-400-line-height: 24px;
-  --designer-body-large-400-font-style: normal;
-  --designer-body-large-600-font-family: "Sora", Helvetica;
-  --designer-body-large-600-font-weight: 600;
-  --designer-body-large-600-font-size: 18px;
-  --designer-body-large-600-letter-spacing: 0px;
-  --designer-body-large-600-line-height: 24px;
-  --designer-body-large-600-font-style: normal;
-  --designer-body-regular-300-font-family: "Sora", Helvetica;
-  --designer-body-regular-300-font-weight: 300;
-  --designer-body-regular-300-font-size: 16px;
-  --designer-body-regular-300-letter-spacing: 0px;
-  --designer-body-regular-300-line-height: 24px;
-  --designer-body-regular-300-font-style: normal;
-  --designer-body-regular-400-font-family: "Sora", Helvetica;
-  --designer-body-regular-400-font-weight: 400;
-  --designer-body-regular-400-font-size: 16px;
-  --designer-body-regular-400-letter-spacing: 0px;
-  --designer-body-regular-400-line-height: 24px;
-  --designer-body-regular-400-font-style: normal;
-  --designer-body-regular-600-font-family: "Sora", Helvetica;
-  --designer-body-regular-600-font-weight: 600;
-  --designer-body-regular-600-font-size: 16px;
-  --designer-body-regular-600-letter-spacing: 0px;
-  --designer-body-regular-600-line-height: 24px;
-  --designer-body-regular-600-font-style: normal;
-  --designer-body-small-300-font-family: "Sora", Helvetica;
-  --designer-body-small-300-font-weight: 300;
-  --designer-body-small-300-font-size: 14px;
-  --designer-body-small-300-letter-spacing: 0px;
-  --designer-body-small-300-line-height: 20px;
-  --designer-body-small-300-font-style: normal;
-  --designer-body-small-400-font-family: "Sora", Helvetica;
-  --designer-body-small-400-font-weight: 400;
-  --designer-body-small-400-font-size: 14px;
-  --designer-body-small-400-letter-spacing: 0px;
-  --designer-body-small-400-line-height: 20px;
-  --designer-body-small-400-font-style: normal;
-  --designer-body-small-600-font-family: "Sora", Helvetica;
-  --designer-body-small-600-font-weight: 600;
-  --designer-body-small-600-font-size: 14px;
-  --designer-body-small-600-letter-spacing: 0px;
-  --designer-body-small-600-line-height: 20px;
-  --designer-body-small-600-font-style: normal;
-  --designer-body-XS-300-font-family: "Sora", Helvetica;
-  --designer-body-XS-300-font-weight: 300;
-  --designer-body-XS-300-font-size: 12px;
-  --designer-body-XS-300-letter-spacing: 0px;
-  --designer-body-XS-300-line-height: 16px;
-  --designer-body-XS-300-font-style: normal;
-  --designer-body-XS-400-font-family: "Sora", Helvetica;
-  --designer-body-XS-400-font-weight: 400;
-  --designer-body-XS-400-font-size: 12px;
-  --designer-body-XS-400-letter-spacing: 0px;
-  --designer-body-XS-400-line-height: 16px;
-  --designer-body-XS-400-font-style: normal;
-  --designer-body-XS-600-font-family: "Sora", Helvetica;
-  --designer-body-XS-600-font-weight: 600;
-  --designer-body-XS-600-font-size: 12px;
-  --designer-body-XS-600-letter-spacing: 0px;
-  --designer-body-XS-600-line-height: 16px;
-  --designer-body-XS-600-font-style: normal;
-  --pop-up: 0px 24px 64px 0px rgba(18, 19, 20, 0.12);
-  --button-main-solid-hover: 0px 24px 48px 0px rgba(18, 95, 183, 0.24);
-  --main-card-shadow: 0px 24px 64px 0px rgba(18, 19, 20, 0.12);
 }
 
-
 .element-product-designer {
-  display: inline-flex;
   flex-direction: column;
   align-items: center;
   position: relative;
@@ -2037,16 +165,12 @@ img {
 
 .element-product-designer .header {
   position: relative;
-  width: 1920px;
-  height: 890px;
   background-color: transparent;
 }
 
 .element-product-designer .BG {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 1920px;
   height: 890px;
   background-size: 100% 100%;
   z-index: 1;
@@ -2055,8 +179,6 @@ img {
 .element-product-designer .layered-waves {
   position: absolute;
   top: 1px;
-  left: 1px;
-  width: 1919px;
   height: 489px;
   transform: rotate(180deg);
   z-index: 2;
@@ -2065,8 +187,6 @@ img {
 .element-product-designer .vector {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 1919px;
   height: 489px;
   transform: rotate(-180deg);
 }
@@ -2074,8 +194,6 @@ img {
 .element-product-designer .img {
   position: absolute;
   top: 45px;
-  left: 0;
-  width: 1919px;
   height: 444px;
   transform: rotate(-180deg);
 }
@@ -2083,8 +201,6 @@ img {
 .element-product-designer .vector-2 {
   position: absolute;
   top: 164px;
-  left: 0;
-  width: 1919px;
   height: 325px;
   transform: rotate(-180deg);
 }
@@ -2092,18 +208,14 @@ img {
 .element-product-designer .vector-3 {
   position: absolute;
   top: 238px;
-  left: 0;
-  width: 1919px;
   height: 251px;
   transform: rotate(-180deg);
-  z-index: -10; 
+  z-index: -10;
 }
 
 .element-product-designer .vector-4 {
   position: absolute;
   top: 356px;
-  left: 0;
-  width: 1919px;
   height: 133px;
   transform: rotate(-180deg);
 }
@@ -2115,7 +227,7 @@ img {
   width: 100%;
   height: 100%;
   min-height: 720px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .element-product-designer .company-logo {
@@ -2219,7 +331,6 @@ img {
 .element-product-designer .content {
   display: inline-flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 24px;
   position: relative;
   flex: 0 0 auto;
@@ -2265,7 +376,6 @@ img {
 
 .element-product-designer .text-wrapper {
   position: relative;
-  width: 648px;
   font-family: var(--product-designer-heading-02-font-family);
   font-weight: var(--product-designer-heading-02-font-weight);
   color: var(--graywhite);
@@ -2278,7 +388,6 @@ img {
 
 .element-product-designer .div {
   position: relative;
-  width: 648px;
   font-family: var(--product-designer-body-large-400-font-family);
   font-weight: var(--product-designer-body-large-400-font-weight);
   color: var(--gray-300);
@@ -2432,7 +541,6 @@ img {
 
 .element-product-designer .about-me {
   display: flex;
-  width: 1320px;
   align-items: flex-start;
   gap: 88px;
   padding: 88px 0px 40px;
@@ -2476,46 +584,22 @@ img {
 
 .element-product-designer .span {
   color: #121314;
-  font-family: var(
-    --product-designer-heading-product-designer-heading-05-font-family
-  );
-  font-style: var(
-    --product-designer-heading-product-designer-heading-05-font-style
-  );
-  font-weight: var(
-    --product-designer-heading-product-designer-heading-05-font-weight
-  );
-  letter-spacing: var(
-    --product-designer-heading-product-designer-heading-05-letter-spacing
-  );
-  line-height: var(
-    --product-designer-heading-product-designer-heading-05-line-height
-  );
-  font-size: var(
-    --product-designer-heading-product-designer-heading-05-font-size
-  );
+  font-family: var(--product-designer-heading-product-designer-heading-05-font-family);
+  font-style: var(--product-designer-heading-product-designer-heading-05-font-style);
+  font-weight: var(--product-designer-heading-product-designer-heading-05-font-weight);
+  letter-spacing: var(--product-designer-heading-product-designer-heading-05-letter-spacing);
+  line-height: var(--product-designer-heading-product-designer-heading-05-line-height);
+  font-size: var(--product-designer-heading-product-designer-heading-05-font-size);
 }
 
 .element-product-designer .text-wrapper-6 {
   color: #00bbff;
-  font-family: var(
-    --product-designer-heading-product-designer-heading-05-font-family
-  );
-  font-style: var(
-    --product-designer-heading-product-designer-heading-05-font-style
-  );
-  font-weight: var(
-    --product-designer-heading-product-designer-heading-05-font-weight
-  );
-  letter-spacing: var(
-    --product-designer-heading-product-designer-heading-05-letter-spacing
-  );
-  line-height: var(
-    --product-designer-heading-product-designer-heading-05-line-height
-  );
-  font-size: var(
-    --product-designer-heading-product-designer-heading-05-font-size
-  );
+  font-family: var(--product-designer-heading-product-designer-heading-05-font-family);
+  font-style: var(--product-designer-heading-product-designer-heading-05-font-style);
+  font-weight: var(--product-designer-heading-product-designer-heading-05-font-weight);
+  letter-spacing: var(--product-designer-heading-product-designer-heading-05-letter-spacing);
+  line-height: var(--product-designer-heading-product-designer-heading-05-line-height);
+  font-size: var(--product-designer-heading-product-designer-heading-05-font-size);
 }
 
 .element-product-designer .p {
@@ -2541,12 +625,6 @@ img {
   letter-spacing: 0;
 }
 
-/* .element-product-designer .wave {
-  position: relative;
-  width: 1920px;
-  height: 148px;
-} */
-
 .element-product-designer .latest-case-study {
   display: inline-flex;
   flex-direction: column;
@@ -2560,10 +638,10 @@ img {
 
 .element-product-designer .text-wrapper-8 {
   position: relative;
-  width: calc(100% - 236px);  
+  width: 100%;
   max-width: 1320px;
-  margin: -1px auto 0;        
-  padding: 0;                 
+  margin: -1px auto 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: "Work Sans-Bold", Helvetica;
   font-weight: 700;
@@ -2571,18 +649,17 @@ img {
   font-size: 56px;
   letter-spacing: 0;
   line-height: 64px;
-  padding: 0 0 0 110px;
 }
 
 .element-product-designer .project-card {
-  display: flex;             
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
   width: 100%;
-  max-width: 1320px;            
-  margin: 0 auto;                
-  padding: 64px;                 
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 64px;
   box-sizing: border-box;
   position: relative;
   background-color: var(--graywhite);
@@ -2653,7 +730,6 @@ img {
 
 .element-product-designer .text-wrapper-10 {
   position: relative;
-  width: 584px;
   font-family: var(--product-designer-heading-04-font-family);
   font-weight: var(--product-designer-heading-04-font-weight);
   color: var(--gray-900);
@@ -2665,7 +741,6 @@ img {
 
 .element-product-designer .text-wrapper-11 {
   position: relative;
-  width: 584px;
   font-family: var(--product-designer-body-large-400-font-family);
   font-weight: var(--product-designer-body-large-400-font-weight);
   color: var(--gray-700);
@@ -2679,7 +754,7 @@ img {
   position: absolute;
   top: calc(45.00% - 300px);
   right: 0;
-  width: 712px;
+  max-width: 712px;
   height: 700px;
 }
 
@@ -2715,7 +790,6 @@ img {
 
 .element-product-designer .e-tutor-education {
   position: relative;
-  width: 584px;
   font-family: "Work Sans-Bold", Helvetica;
   font-weight: 700;
   color: var(--gray-900);
@@ -2726,7 +800,6 @@ img {
 
 .element-product-designer .e-tutor-is-an {
   position: relative;
-  width: 584px;
   font-family: "Work Sans-Regular", Helvetica;
   font-weight: 400;
   color: var(--gray-900);
@@ -2737,7 +810,6 @@ img {
 
 .element-product-designer .project-image-2 {
   position: absolute;
-  width: 712px;
   top: calc(45.00% - 300px);
   right: 0;
   width: 712px;
@@ -2825,7 +897,6 @@ img {
 
 .element-product-designer .text-wrapper-14 {
   position: relative;
-  width: 648px;
   margin-top: -1px;
   font-family: var(--product-designer-body-XXL-400-font-family);
   font-weight: var(--product-designer-body-XXL-400-font-weight);
@@ -2914,19 +985,19 @@ img {
 }
 
 .element-product-designer .pricing {
-  display: flex;                 
+  display: flex;
   flex-direction: column;
-  align-items: center;           
+  align-items: center;
   gap: 48px;
-  width: 100%;                   
-  padding: 88px 24px;            
-  box-sizing: border-box;       
+  width: 100%;
+  padding: 88px 24px;
+  box-sizing: border-box;
   position: relative;
   background-color: var(--gray-50);
 }
+
 .element-product-designer .text-wrapper-16 {
   position: relative;
-  width: 1320px;
   margin-top: -1px;
   font-family: var(--product-designer-heading-01-font-family);
   font-weight: var(--product-designer-heading-01-font-weight);
@@ -2940,7 +1011,6 @@ img {
 
 .element-product-designer .text-wrapper-17 {
   position: relative;
-  width: 648px;
   font-family: var(--product-designer-body-large-400-font-family);
   font-weight: var(--product-designer-body-large-400-font-weight);
   color: var(--gray-600);
@@ -2952,20 +1022,34 @@ img {
 }
 
 .element-product-designer .card {
-  display: inline-flex;
-  align-items: flex-start;
+  display: flex;
+  align-items: stretch;
   gap: 24px;
   position: relative;
   flex: 0 0 auto;
+  width: 100%;
+  max-width: 1320px;
+  box-sizing: border-box;
+}
+
+.element-product-designer .card .pricing-plan,
+.element-product-designer .card .pricing-plan-3 {
+  flex: 1 1 300px;
+  justify-content: flex-start;
+}
+
+.element-product-designer .card .button-7,
+.element-product-designer .card .button-8 {
+  margin-top: auto;
 }
 
 .element-product-designer .pricing-plan {
   display: flex;
   flex-direction: column;
-  flex: 1 1 0;                
-  width: auto;                  
-  min-width: 0;                 
-  box-sizing: border-box;        
+  flex: 1 1 0;
+  width: auto;
+  min-width: 0;
+  box-sizing: border-box;
   align-items: flex-start;
   justify-content: center;
   gap: 32px;
@@ -2981,30 +1065,19 @@ img {
   position: relative;
   align-self: stretch;
   margin-top: -1px;
-  font-family: var(
-    --product-designer-heading-product-designer-heading-05-font-family
-  );
-  font-weight: var(
-    --product-designer-heading-product-designer-heading-05-font-weight
-  );
+  font-family: var(--product-designer-heading-product-designer-heading-05-font-family);
+  font-weight: var(--product-designer-heading-product-designer-heading-05-font-weight);
   color: var(--gray-900);
-  font-size: var(
-    --product-designer-heading-product-designer-heading-05-font-size
-  );
-  letter-spacing: var(
-    --product-designer-heading-product-designer-heading-05-letter-spacing
-  );
-  line-height: var(
-    --product-designer-heading-product-designer-heading-05-line-height
-  );
-  font-style: var(
-    --product-designer-heading-product-designer-heading-05-font-style
-  );
+  font-size: var(--product-designer-heading-product-designer-heading-05-font-size);
+  letter-spacing: var(--product-designer-heading-product-designer-heading-05-letter-spacing);
+  line-height: var(--product-designer-heading-product-designer-heading-05-line-height);
+  font-style: var(--product-designer-heading-product-designer-heading-05-font-style);
 }
 
 .element-product-designer .text-wrapper-19 {
   position: relative;
   align-self: stretch;
+  margin: 0;
   font-family: "Work Sans-Regular", Helvetica;
   font-weight: 400;
   color: var(--gray-500);
@@ -3054,7 +1127,7 @@ img {
 .element-product-designer .label {
   position: relative;
   flex: 1;
-  margin-top: -1px;
+  margin: -1px 0 0;
   font-family: var(--product-designer-body-regular-500-font-family);
   font-weight: var(--product-designer-body-regular-500-font-weight);
   color: var(--gray-900);
@@ -3097,10 +1170,10 @@ img {
 .element-product-designer .pricing-plan-3 {
   display: flex;
   flex-direction: column;
-  flex: 1 1 0;                  
-  width: auto;                 
-  min-width: 0;                 
-  box-sizing: border-box;        
+  flex: 1 1 0;
+  width: auto;
+  min-width: 0;
+  box-sizing: border-box;
   justify-content: center;
   align-items: flex-start;
   gap: 32px;
@@ -3193,7 +1266,6 @@ img {
 }
 
 .element-product-designer .information-2 {
-  align-items: flex-start;
   align-items: stretch;
   gap: 32px;
   width: 625px;
@@ -3227,7 +1299,6 @@ img {
 
 .element-product-designer .row-2 {
   display: flex;
-  width: 648px;
   align-items: flex-start;
   gap: 18px;
   position: relative;
@@ -3266,18 +1337,12 @@ img {
 }
 
 .element-product-designer .card-2 {
-  width: 562px;
+  width: 625px;
   align-items: flex-start;
   gap: 16px;
-  padding: 32px;
   flex: 0 0 auto;
   border-radius: 12px;
   overflow: hidden;
-  background: linear-gradient(
-    0deg,
-    rgba(18, 19, 20, 1) 0%,
-    rgba(18, 19, 20, 1) 100%
-  );
   display: flex;
   position: relative;
 }
@@ -3337,61 +1402,85 @@ img {
 }
 
 .element-product-designer .devider-3 {
-  width: 1px;
+  width: 625px;
+  height: auto;
   object-fit: cover;
   position: relative;
   align-self: stretch;
   margin: 16px 0;
+/* Card */
+
+/* Auto layout */
+/* display: flex;
+flex-direction: row;
+align-items: flex-start;
+
+gap: 16px;
+object-fit: cover;
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 12px; */
+
+/* Inside auto layout */
+/* flex: none;
+order: 1;
+flex-grow: 0; */
+
 }
 
 .element-product-designer .footer {
-  display: flex;
-  width: 1920px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  justify-content: space-between;
-  padding: 32px 300px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 32px max(20px, calc((100% - 1320px) / 2));
   position: relative;
   flex: 0 0 auto;
-  background-color: transparent;
-  border-top-width: 1px;
-  border-top-style: solid;
-  border-right-style: none;
-  border-bottom-style: none;
-  border-left-style: none;
-  border-color: var(--gray-100);
+  background-color: var(--graywhite);
+  border: none;
+  border-top: 1px solid var(--gray-100);
 }
 
 .element-product-designer .div-wrapper {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 14px 0px;
+  grid-column: 1;
+  justify-self: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  padding: 0;
   position: relative;
-  flex: 0 0 auto;
   background-color: var(--gray-900);
-  border-radius: 50px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .element-product-designer .text-wrapper-28 {
   position: relative;
-  width: 56px;
-  margin-top: -1px;
-  font-family: var(--product-designer-body-XL-600-font-family);
-  font-weight: var(--product-designer-body-XL-600-font-weight);
+  width: auto;
+  margin: 0;
+  font-family: "Work Sans-SemiBold", "Work Sans", Helvetica;
+  font-weight: 600;
   color: var(--graywhite);
-  font-size: var(--product-designer-body-XL-600-font-size);
+  font-size: 20px;
   text-align: center;
-  letter-spacing: var(--product-designer-body-XL-600-letter-spacing);
-  line-height: var(--product-designer-body-XL-600-line-height);
-  font-style: var(--product-designer-body-XL-600-font-style);
+  letter-spacing: 0;
+  line-height: 28px;
 }
 
-.element-product-designer .text-wrapper-29 {
-  justify-self: end;
-  position: relative;
+/* © nằm trong .footer-links (HTML) nên ghim sang phải bằng absolute */
+
+.element-product-designer .footer .text-wrapper-29 {
+  position: absolute;
+  top: 50%;
+  right: max(20px, calc((100% - 1320px) / 2));
+  transform: translateY(-50%);
   width: fit-content;
-  font-family: "Work Sans-Regular", Helvetica;
+  margin: 0;
+  font-family: "Work Sans-Regular", "Work Sans", Helvetica;
   font-weight: 400;
   color: var(--gray-900);
   font-size: 16px;
@@ -3402,8 +1491,8 @@ img {
 }
 
 .element-product-designer .footer-links {
-  position: static; 
-  display: inline-flex;
+  grid-column: 2;
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 36px;
@@ -3413,27 +1502,34 @@ img {
 .element-product-designer .text-wrapper-30 {
   position: relative;
   width: fit-content;
-  margin-top: -1px;
-  font-family: "Work Sans-SemiBold", Helvetica;
+  margin: 0;
+  font-family: "Work Sans-SemiBold", "Work Sans", Helvetica;
   font-weight: 600;
   color: var(--gray-900);
   font-size: 16px;
   letter-spacing: 0;
   line-height: 24px;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .element-product-designer .text-wrapper-31 {
   position: relative;
   width: fit-content;
-  margin-top: -1px;
-  font-family: "Work Sans-Regular", Helvetica;
+  margin: 0;
+  font-family: "Work Sans-Regular", "Work Sans", Helvetica;
   font-weight: 400;
   color: var(--gray-600);
   font-size: 16px;
   letter-spacing: 0;
   line-height: 24px;
   white-space: nowrap;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.element-product-designer .text-wrapper-31:hover {
+  color: var(--gray-900);
 }
 
 body {
@@ -3464,7 +1560,10 @@ body {
   left: 0;
 }
 
-.element-product-designer .wave,
+.element-product-designer .wave{
+  position: relative;
+  z-index: -1;
+}
 .element-product-designer .wave-2,
 .element-product-designer .wave-3,
 .element-product-designer .wave-4 {
@@ -3488,9 +1587,7 @@ body {
   padding-right: 20px;
 }
 
-.element-product-designer .text-wrapper-8,
 .element-product-designer .text-wrapper-16,
-.element-product-designer .text-wrapper-14,
 .element-product-designer .text-wrapper-17,
 .element-product-designer .text-wrapper,
 .element-product-designer .div {
@@ -3498,57 +1595,100 @@ body {
   max-width: 100%;
 }
 
-.element-product-designer .card { flex-wrap: wrap; justify-content: center; }
+.element-product-designer .card {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.element-product-designer .quotation .div-3 {
+  width: 100%;
+  max-width: 648px;
+}
+
+.element-product-designer .text-wrapper-14 {
+  width: 100%;
+  max-width: 648px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .element-product-designer .text-wrapper-10,
 .element-product-designer .text-wrapper-11,
 .element-product-designer .e-tutor-education,
 .element-product-designer .e-tutor-is-an {
   width: 100%;
 }
-.element-product-designer .project-image,
 
-.element-product-designer .call-to-action { flex-wrap: wrap; }
+.element-product-designer .project-image,
+.element-product-designer .call-to-action {
+  flex-wrap: wrap;
+}
+
 .element-product-designer .row-2,
-.element-product-designer .card-2
-.element-product-designer .text-wrapper-24 { width: 100%; }
+.element-product-designer .card-2 .element-product-designer .text-wrapper-24 {
+  width: 100%;
+}
 
 .element-product-designer .footer-links {
   position: static;
 }
 
 @media (max-width: 1024px) {
-  .element-product-designer .project-card { padding: 32px; }
+  .element-product-designer .project-card {
+    padding: 32px;
+  }
+
   .element-product-designer .project-image,
   .element-product-designer .project-image-2 {
     position: static;
     width: 100%;
     margin-top: 16px;
   }
-  .element-product-designer .about-me { flex-direction: column; gap: 24px; }
-  .element-product-designer .text-wrapper-5 { width: 100%; }
+
+  .element-product-designer .about-me {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .element-product-designer .text-wrapper-5 {
+    width: 100%;
+  }
+
   .element-product-designer .content-2,
-  .element-product-designer .text-wrapper-23 { width: 100%; }
+  .element-product-designer .text-wrapper-23 {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
-  .element-product-designer .header { height: 1000px; }
+  .element-product-designer .header {
+    height: 1000px;
+  }
 
-  .element-product-designer .navbar { display: none; }
-  .element-product-designer .navigation { padding: 16px 0; }
+  .element-product-designer .navigation {
+    padding: 16px 0;
+  }
 
   .element-product-designer .company-logo {
     top: 820px;
     width: calc(100% - 32px);
     padding: 24px 16px;
   }
-  .element-product-designer .my-clients-over-the { width: 100%; }
+
+  .element-product-designer .my-clients-over-the {
+    width: 100%;
+  }
+
   .element-product-designer .row {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
   }
 
-  .element-product-designer .text-wrapper { font-size: 32px; line-height: 40px; }
+  .element-product-designer .text-wrapper {
+    font-size: 32px;
+    line-height: 40px;
+  }
 
   .element-product-designer .text-wrapper-5,
   .element-product-designer .text-wrapper-8,
@@ -3557,9 +1697,17 @@ body {
     font-size: 32px;
     line-height: 40px;
   }
+
   .element-product-designer .text-wrapper-10,
-  .element-product-designer .e-tutor-education { font-size: 26px; line-height: 32px; }
-  .element-product-designer .text-wrapper-14 { font-size: 18px; line-height: 26px; }
+  .element-product-designer .e-tutor-education {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .element-product-designer .text-wrapper-14 {
+    font-size: 18px;
+    line-height: 26px;
+  }
 
   .element-product-designer .latest-case-study,
   .element-product-designer .quotation,
@@ -3569,17 +1717,40 @@ body {
     gap: 32px;
   }
 
-  .element-product-designer .row-2 { flex-direction: column; }
-  .element-product-designer .card-2 { flex-direction: column; }
-  .element-product-designer .devider-3 { width: 100%; height: 1px; }
+  .element-product-designer .row-2 {
+    flex-direction: column;
+  }
+
+  .element-product-designer .card-2 {
+    flex-direction: column;
+  }
 
   .element-product-designer .footer {
-    flex-direction: column;
-    gap: 16px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 16px;
     text-align: center;
   }
-  .element-product-designer .footer-links { flex-wrap: wrap; gap: 16px; }
+
+  .element-product-designer .div-wrapper,
+  .element-product-designer .footer-links {
+    grid-column: 1;
+    justify-self: center;
+  }
+
+  .element-product-designer .footer-links {
+    flex-wrap: wrap;
+    gap: 16px 24px;
+  }
+
+  .element-product-designer .footer .text-wrapper-29 {
+    position: static;
+    transform: none;
+    flex-basis: 100%;
+    text-align: center;
+  }
 }
+
 .element-product-designer .hamburger {
   display: none;
   flex-direction: column;
@@ -3605,9 +1776,11 @@ body {
 .element-product-designer .hamburger.active span:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
 }
+
 .element-product-designer .hamburger.active span:nth-child(2) {
   opacity: 0;
 }
+
 .element-product-designer .hamburger.active span:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
 }
@@ -3616,9 +1789,11 @@ body {
   .element-product-designer .hamburger {
     display: flex;
   }
+
   .element-product-designer .navigation .button-3 {
     display: none;
   }
+
   .element-product-designer .navbar {
     display: none;
     position: absolute;
@@ -3637,8 +1812,9 @@ body {
     display: flex;
   }
 }
+
 .element-product-designer .content {
-  align-items: center; 
+  align-items: center;
   width: 100%;
 }
 
@@ -3646,14 +1822,39 @@ body {
   align-self: center;
   text-align: center;
 }
-.text-wrapper100{
-  position: relative;
+
+.element-product-designer .text-wrapper100 {
+  /* position: absolute;
+  top: 520px;
+  left: 4%;
+  font-size: 90px;
+  gap: 2px;
+  color: #222628;
+  font-weight: bold;
   width: fit-content;
-  margin-top: -1px;
+  margin-top: 148px;
+  z-index: 10; */
+  /* Product Designer */
+
+position: absolute;
+width: fit-content;
+height: 256px;
+left: 4%;
+top: 520px;
+margin-top: 131px;
+font-family: 'Work Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 90px;
+line-height: 100%;
+text-align: center;
+color: #222628;
+z-index: 2;
 }
-  @font-face {
-    font-family: 'chu-ky'; 
-    src: url('../img/fonts/MrsSaintDelafield-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+
+@font-face {
+  font-family: 'chu-ky';
+  src: url('../img/fonts/MrsSaintDelafield-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }

@@ -34,13 +34,9 @@ body {
 
 .element-product-designer .header {
   height: 890px;
+  overflow: hidden;
   position: relative;
   width: 100%;
-}
-
-.element-product-designer .BG {
-  height: 890px;
-  background-repeat: no-repeat;
 }
 
 .element-product-designer .pricing {
@@ -169,14 +165,10 @@ body {
   background-color: #ffffff;
 }
 
-.element-product-designer .header {
-  position: relative;
-  background-color: transparent;
-}
-
 .element-product-designer .BG {
   position: absolute;
-  top: 0;
+  top: -150px;
+  left: -100px;
   height: 890px;
   background-size: 100% 100%;
   z-index: 1;
@@ -228,10 +220,10 @@ body {
 
 .element-product-designer .text-product {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 105px;
+  left: -100px;
+  width: 85%;
+  height: 85%;
   min-height: 720px;
   z-index: 2;
 }
@@ -243,10 +235,11 @@ body {
   align-items: center;
   justify-content: center;
   gap: 16px;
-  padding: 32px 48px;
+  width: 420px;
+  padding: 26px 0px;
   position: absolute;
-  top: 650px;
-  left: 50%;
+  top: 605px;
+  left: calc(50% + -0.8px);
   transform: translateX(-50%);
   background-color: var(--graywhite);
   border-radius: 8px;
@@ -261,25 +254,26 @@ body {
   font-family: var(--product-designer-caption-04-font-family);
   font-weight: var(--product-designer-caption-04-font-weight);
   color: var(--gray-400);
-  font-size: var(--product-designer-caption-04-font-size);
+  font-size: 10px;
   text-align: center;
   letter-spacing: var(--product-designer-caption-04-letter-spacing);
-  line-height: var(--product-designer-caption-04-line-height);
+  line-height: 14px;
   font-style: var(--product-designer-caption-04-font-style);
 }
 
 .element-product-designer .row {
   display: inline-flex;
   align-items: center;
-  gap: 36px;
+  gap: 70px;
   position: relative;
   flex: 0 0 auto;
+  transform: scale(0.75);
 }
 
 .element-product-designer .vector-wrapper {
   position: relative;
-  width: 80px;
-  height: 40px;
+  width: 50px;
+  height: 25px;
 }
 
 .element-product-designer .vector-5 {
@@ -388,26 +382,59 @@ body {
 
 .element-product-designer .text-wrapper {
   position: relative;
-  font-family: var(--product-designer-heading-02-font-family);
-  font-weight: var(--product-designer-heading-02-font-weight);
+  font-family: 'Work Sans', Helvetica;
+  font-weight: 700;
   color: var(--graywhite);
-  font-size: 36px;
+  font-size: 33px;
   text-align: center;
-  letter-spacing: var(--product-designer-heading-02-letter-spacing);
-  line-height: var(--product-designer-heading-02-line-height);
-  font-style: var(--product-designer-heading-02-font-style);
+  letter-spacing: 4px;
+  line-height: 56px;
+  text-align: center;
+  gap: 0.25em;
+  flex: none;
+  order:1;
+  flex-grow: 0;
+  font-style: normal;
+}
+
+.element-product-designer .text-wrapper .name-1 {
+  display: inline-block;
+  transform: translate(4px, -2px);
+}
+
+.element-product-designer .text-wrapper .name-2 {
+  display: inline-block;
+  transform: translate(-4px, -2px);
 }
 
 .element-product-designer .div {
   position: relative;
-  font-family: var(--product-designer-body-large-400-font-family);
-  font-weight: var(--product-designer-body-large-400-font-weight);
+  font-family: 'Work Sans', Helvetica;
+  font-weight: 400;
   color: var(--gray-300);
-  font-size: var(--product-designer-body-large-400-font-size);
+  font-size: 15px;
   text-align: center;
   letter-spacing: var(--product-designer-body-large-400-letter-spacing);
-  line-height: var(--product-designer-body-large-400-line-height);
+  line-height: 20px;
+  letter-spacing: 0.3px;
   font-style: var(--product-designer-body-large-400-font-style);
+  transform: translate(-7px, -16px);
+}
+
+.element-product-designer .div .line-1,
+.element-product-designer .div .line-2 {
+  display: block;
+  white-space: nowrap;
+}
+
+.element-product-designer .div .line-1 {
+  letter-spacing: 0.42px;
+  transform: translate(4px, 0px);
+}
+
+.element-product-designer .div .line-2 {
+  letter-spacing: 0.45px;
+  transform: translate(2px, 0px);
 }
 
 .element-product-designer .button {
@@ -416,9 +443,6 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  height: 56px;
-  padding: 0px 32px;
   position: relative;
   flex: 0 0 auto;
   margin-top: 0;
@@ -426,12 +450,18 @@ body {
   border: 2px solid;
   border-color: var(--product-500);
   cursor: pointer;
+
+  width: 195px;
+  height: 45px;
+  padding: 0px 20px;
+  gap: 8px;
+  transform: translate(0px, -16px);
 }
 
 .element-product-designer .img-2 {
   position: relative;
-  width: 24px;
-  height: 24px;
+  width: 18px;
+  height: 18px;
 }
 
 .element-product-designer .button-2 {
@@ -441,7 +471,8 @@ body {
   font-family: var(--product-designer-heading-06-font-family);
   font-weight: var(--product-designer-heading-06-font-weight);
   color: var(--product-500);
-  font-size: var(--product-designer-heading-06-font-size);
+  font-size: 13px;
+  transform: translate(-1px, 1px);
   letter-spacing: var(--product-designer-heading-06-letter-spacing);
   line-height: var(--product-designer-heading-06-line-height);
   white-space: nowrap;
@@ -583,7 +614,10 @@ body {
   flex: 0 0 auto;
   width: 1920px;
   height: 352px;
-  margin: 0 auto;
+  margin-top: -195px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .element-product-designer .text-wrapper-5 {
@@ -593,10 +627,12 @@ body {
   font-family: var(--product-designer-heading-01-font-family);
   font-weight: var(--product-designer-heading-01-font-weight);
   color: var(--gray-900);
-  font-size: var(--product-designer-heading-01-font-size);
+  font-size: 45px;
+  transform: translate(133.7px, -0px);
   letter-spacing: var(--product-designer-heading-01-letter-spacing);
-  line-height: var(--product-designer-heading-01-line-height);
+  line-height: -20px;
   font-style: var(--product-designer-heading-01-font-style);
+
 }
 
 .element-product-designer .about {
@@ -621,23 +657,29 @@ body {
 }
 
 .element-product-designer .span {
+  position: relative;
   color: #121314;
   font-family: var(--product-designer-heading-product-designer-heading-05-font-family);
   font-style: var(--product-designer-heading-product-designer-heading-05-font-style);
   font-weight: var(--product-designer-heading-product-designer-heading-05-font-weight);
   letter-spacing: var(--product-designer-heading-product-designer-heading-05-letter-spacing);
   line-height: var(--product-designer-heading-product-designer-heading-05-line-height);
-  font-size: var(--product-designer-heading-product-designer-heading-05-font-size);
+  font-size: 19px;
+  top: -5px;
+  left: 30px;
 }
 
 .element-product-designer .text-wrapper-6 {
+  position: relative;
   color: #00bbff;
   font-family: var(--product-designer-heading-product-designer-heading-05-font-family);
   font-style: var(--product-designer-heading-product-designer-heading-05-font-style);
   font-weight: var(--product-designer-heading-product-designer-heading-05-font-weight);
   letter-spacing: var(--product-designer-heading-product-designer-heading-05-letter-spacing);
   line-height: var(--product-designer-heading-product-designer-heading-05-line-height);
-  font-size: var(--product-designer-heading-product-designer-heading-05-font-size);
+  font-size: 19px;
+  top: -5px;
+  left: 48px;
 }
 
 .element-product-designer .p {
@@ -646,33 +688,38 @@ body {
   font-family: var(--product-designer-body-XL-400-font-family);
   font-weight: var(--product-designer-body-XL-400-font-weight);
   color: var(--gray-600);
-  font-size: var(--product-designer-body-XL-400-font-size);
+  font-size: 15px;
   letter-spacing: var(--product-designer-body-XL-400-letter-spacing);
-  line-height: var(--product-designer-body-XL-400-line-height);
+  line-height: 24.5px;
   font-style: var(--product-designer-body-XL-400-font-style);
+  top: -11px;
+  left: 29px;
 }
 
 .element-product-designer .text-wrapper-7 {
   align-self: stretch;
   font-family: "chu-ky", cursive;
   font-weight: 400;
-  font-size: 48px;
+  font-size: 40px;
   line-height: 56px;
   position: relative;
   color: var(--gray-900);
   letter-spacing: 0;
+  top: -27px;
+  left: 25px;
 }
 
 .element-product-designer .latest-case-study {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 48px;
+  gap: 30.8px;
   padding: 88px 0;
   position: relative;
   width: 100%;
   min-height: 1558px;
   background-color: var(--gray-50);
+  margin-top: -145px;
 }
 
 .element-product-designer .text-wrapper-8 {
@@ -683,9 +730,9 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Work Sans-Bold", Helvetica;
-  font-weight: 700;
+  font-weight: 900;
   color: var(--gray-900);
-  font-size: 56px;
+  font-size: 40.3px;
   letter-spacing: 0;
   line-height: 64px;
 }
@@ -1609,10 +1656,7 @@ body {
   margin: 0;
 }
 
-.element-product-designer .header {
-  width: 1920px;
-  height: 890px;
-}
+
 
 .element-product-designer .BG,
 .element-product-designer .layered-waves,
@@ -1627,10 +1671,12 @@ body {
 
 .element-product-designer .wave {
   position: relative;
-  z-index: -1;
   width: 1920px;
   height: 148px;
   object-fit: cover;
+  margin-bottom: 100px;
+  margin-top: -60px;
+  left: 0px;
 }
 
 .element-product-designer .wave-2 {
@@ -1697,8 +1743,7 @@ body {
 
 .element-product-designer .text-wrapper-16,
 .element-product-designer .text-wrapper-17,
-.element-product-designer .text-wrapper,
-.element-product-designer .div {
+.element-product-designer .text-wrapper {
   width: 100%;
   max-width: 100%;
 }
@@ -1770,29 +1815,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  .element-product-designer .header {
-    height: 1000px;
-  }
-
-  /* .element-product-designer .navigation {
-    padding: 16px 0;
-  } */
-
-  .element-product-designer .company-logo {
-    top: 820px;
-    width: calc(100% - 32px);
-    padding: 24px 16px;
-  }
-
-  .element-product-designer .my-clients-over-the {
-    width: 100%;
-  }
-
-  .element-product-designer .row {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
 
   .element-product-designer .text-wrapper {
     font-size: 32px;
@@ -1942,34 +1964,28 @@ body {
 } */
 
 .element-product-designer .text-wrapper100 {
-  /* position: absolute;
-  top: 520px;
-  left: 4%;
-  font-size: 90px;
-  gap: 2px;
-  color: #222628;
-  font-weight: bold;
-  width: fit-content;
-  margin-top: 148px;
-  z-index: 10; */
-  /* Product Designer */
-
   position: absolute;
   width: fit-content;
-  height: 256px;
-  left: calc(50% - 780px);
-  top: 450px;
+  left: calc(50% - 910px);
+  top: 500px;
   margin-top: 0;
   font-family: 'Work Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 90px;
+  font-size: 95px;
   line-height: 100%;
   text-align: left;
   color: #222628;
   z-index: 2;
   pointer-events: none;
 }
+
+.element-product-designer .text-wrapper100 .pd-1,
+.element-product-designer .text-wrapper100 .pd-2 {
+  display: block;
+}
+.element-product-designer .text-wrapper100 .pd-1 { transform: translate(2px, 145px); letter-spacing: 1px; }
+.element-product-designer .text-wrapper100 .pd-2 { transform: translate(-15px, 155px); letter-spacing: 0px; }
 
 @font-face {
   font-family: 'chu-ky';
